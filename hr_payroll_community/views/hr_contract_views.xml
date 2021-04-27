@@ -19,6 +19,7 @@
                     <field name="trial_wage" nolabel="1"/>
                     <span>/ month</span>
                 </div>
+                 <label for="additional_wage"/>
                 <div class="o_row" name="additional_wage">
                     <field name="additional_wage" nolabel="1"/>
                     <span>/ month</span>
