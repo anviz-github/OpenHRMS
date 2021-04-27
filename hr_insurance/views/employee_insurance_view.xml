@@ -11,7 +11,23 @@
                 <page name="insurance" string="Insurance">
                     <group>
                         <group>
-                            <field name="insurance_percentage">%</field>
+                            <!--field name="insurance_percentage">%</field-->
+                            <field name="insurance_pesion_personal">%</field>
+                            <field name="insurance_medical_personal">%</field>
+                            <field name="insurance_unemployment_personal">%</field>
+                            <field name="insurance_hf_personal" >%</field>
+                            <field name="insurance_fertility_personal">%</field>
+                            <field name="insurance_injury_personal">%</field>
+
+
+                        </group>
+                        <group>
+                            <field name="insurance_pesion_company" >%</field>
+                            <field name="insurance_medical_company" >%</field>
+                            <field name="insurance_unemployment_company" >%</field>
+                            <field name="insurance_hf_company" >%</field>
+                            <field name="insurance_fertility_company" >%</field>
+                            <field name="insurance_injury_company" >%</field>
                         </group>
                         <group>
                             <field name="deduced_amount_per_year"/>
@@ -52,8 +68,10 @@
                             </group>
                             <group>
                                 <field name="policy_id"/>
-                                <field name="sum_insured"/>
-                                <field name="amount"/>
+                                <!--field name="sum_insured"/>
+                                <field name="amount"/-->
+                                <field name="company_amount"/>
+                                <field name="personal_amount"/>
                                 <field name="company_id"/>
                             </group>
                         </group>
@@ -70,8 +88,10 @@
                      <field name="employee_id"/>
                     <field name="policy_id"/>
                     <field name="policy_coverage"/>
-                    <field name="sum_insured"/>
-                    <field name="amount"/>
+                    <!--field name="sum_insured"/>
+                    <field name="amount"/-->
+                    <field name="company_amount"/>
+                    <field name="personal_amount"/>
                     <field name="date_from" />
 				<field name="date_to"/>
                     <field name="company_id"/>

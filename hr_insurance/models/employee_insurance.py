@@ -34,9 +34,9 @@ class EmployeeInsurance(models.Model):
     @api.onchange('policy_id')
     def _compute_amount(self):
         if self.policy_id.insure_type == "SIA":
-            self.company_amount = self.policy_id.company_percentage * self.employee_id.contract_id.sia
+            self.company_amount = self.policy_id.company_percentage/100 * self.employee_id.contract_id.sia
         else:
-            self.company_amount = self.policy_id.company_percentage * self.employee_id.contract_id.hra
+            self.company_amount = self.policy_id.company_percentage/100 * self.employee_id.contract_id.hra
 
 
     def get_status(self):
@@ -69,6 +69,74 @@ class HrInsurance(models.Model):
     insurance = fields.One2many('hr.insurance', 'employee_id', string="Insurance", help="Insurance",
                                 domain=[('state', '=', 'active')])
 
+    insurance_pesion_personal = fields.Float(string="pesion personal", compute="get_insure_subtotal")
+    insurance_medical_personal = fields.Float(string="medical personal", compute="get_insure_subtotal")
+    insurance_unemployment_personal = fields.Float(string="unemployment personal", compute="get_insure_subtotal")
+    insurance_hf_personal = fields.Float(string="house fund personal", compute="get_insure_subtotal")
+    insurance_fertility_personal = fields.Float(string="fertility personal", compute="get_insure_subtotal")
+    insurance_injury_personal = fields.Float(string="injury personal", compute="get_insure_subtotal")
+    insurance_pesion_company = fields.Float(string="pesion company", compute="get_insure_subtotal")
+    insurance_medical_company = fields.Float(string="medical company", compute="get_insure_subtotal")
+    insurance_unemployment_company = fields.Float(string="unemployment company", compute="get_insure_subtotal")
+    insurance_hf_company = fields.Float(string="house fund company", compute="get_insure_subtotal")
+    insurance_fertility_company = fields.Float(string="fertility company", compute="get_insure_subtotal")
+    insurance_injury_company = fields.Float(string="injury company", compute="get_insure_subtotal")
+
+    @api.onchange('insurance')
+    def get_insure_subtotal(self):
+        current_date = datetime.now()
+        current_datetime = datetime.strftime(current_date, "%Y-%m-%d ")
+        #lastMonth = (datetime.today().replace(day=1) - timedelta(days=1)).date()
+
+        for emp in self:
+            ins_amount_pesion_personal = 0
+            ins_amount_pesion_company = 0
+            ins_amount_medical_personal = 0
+            ins_amount_medical_company = 0
+            ins_amount_fertility_personal = 0
+            ins_amount_fertility_company = 0
+            ins_amount_hf_personal = 0
+            ins_amount_hf_company = 0
+            ins_amount_unemployment_personal = 0
+            ins_amount_unemployment_company = 0
+            ins_amount_injury_personal = 0
+            ins_amount_injury_company = 0
+            for ins in emp.insurance:
+                x = ins.date_from
+                y = ins.date_to
+                if x < current_datetime:
+                    if y >= current_datetime:
+                        if ins.name == "养老保险":
+                            ins_amount_pesion_personal = ins_amount_pesion_personal + ins.sum_personal_insured
+                            ins_amount_pesion_company = ins_amount_pesion_company + ins.sum_company_insured
+                        elif ins.name == "医疗保险":
+                            ins_amount_medical_personal = ins_amount_medical_personal + ins.sum_personal_insured
+                            ins_amount_medical_company = ins_amount_medical_company + ins.sum_company_insured
+                        elif ins.name == "失业保险":
+                            ins_amount_unemployment_personal = ins_amount_unemployment_personal + ins.sum_personal_insured
+                            ins_amount_unemployment_company = ins_amount_unemployment_company + ins.sum_company_insured
+                        elif ins.name == "生育保险":
+                            ins_amount_fertility_personal = ins_amount_fertility_personal + ins.sum_personal_insured
+                            ins_amount_fertility_company = ins_amount_fertility_company + ins.sum_company_insured
+                        elif ins.name == "工伤保险":
+                            ins_amount_injury_personal = ins_amount_injury_personal + ins.sum_personal_insured
+                            ins_amount_injury_company = ins_amount_injury_company + ins.sum_company_insured
+                        elif ins.name == "住房公积金":
+                            ins_amount_hf_personal = ins_amount_hf_personal + ins.sum_personal_insured
+                            ins_amount_hf_company = ins_amount_hf_company + ins.sum_company_insured
+
+        emp.insurance_pesion_personal = ins_amount_pesion_personal
+        emp.insurance_pesion_company = ins_amount_pesion_company
+        emp.insurance_medical_personal = ins_amount_medical_personal
+        emp.insurance_medical_company = ins_amount_medical_company
+        emp.insurance_fertility_personal = ins_amount_fertility_personal
+        emp.insurance_fertility_company = ins_amount_fertility_company
+        emp.insurance_unemployment_personal = ins_amount_unemployment_personal
+        emp.insurance_unemployment_company = ins_amount_unemployment_company
+        emp.insurance_injury_personal = ins_amount_injury_personal
+        emp.insurance_injury_company = ins_amount_injury_company
+        emp.insurance_hf_personal = ins_amount_hf_personal
+        emp.insurance_hf_company = ins_amount_hf_company
     def get_deduced_amount(self):
         current_date = datetime.now()
         current_datetime = datetime.strftime(current_date, "%Y-%m-%d ")
