@@ -35,8 +35,10 @@ class EmployeeInsurance(models.Model):
     def _compute_amount(self):
         if self.policy_id.insure_type == "SIA":
             self.company_amount = self.policy_id.company_percentage/100 * self.employee_id.contract_id.sia
+            self.personal_amount = self.policy_id.persoanl_percentage/100 * self.employee_id.contract_id.sia
         else:
             self.company_amount = self.policy_id.company_percentage/100 * self.employee_id.contract_id.hra
+            self.personal_amount = self.policy_id.persoanl_percentage/100 * self.employee_id.contract_id.hra
 
 
     def get_status(self):
@@ -102,8 +104,8 @@ class HrInsurance(models.Model):
             ins_amount_injury_personal = 0
             ins_amount_injury_company = 0
             for ins in emp.insurance:
-                x = ins.date_from
-                y = ins.date_to
+                x = str(ins.date_from)
+                y = str(ins.date_to)
                 if x < current_datetime:
                     if y >= current_datetime:
                         if ins.name == "养老保险":
