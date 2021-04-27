@@ -14,7 +14,7 @@ class EmployeeInsurance(models.Model):
     employee_id = fields.Many2one('hr.employee', string='Employee', required=True, help="Employee")
     policy_id = fields.Many2one('insurance.policy', string='Policy', required=True, help="Policy")
     amount = fields.Float(string='Premium', required=False, help="Policy amount")
-    sum_insured = fields.Float(string="Sum Insured", required=True, help="Insured sum")
+    sum_insured = fields.Float(string="Sum Insured", required=False, help="Insured sum")
     policy_coverage = fields.Selection([('monthly', 'Monthly'), ('yearly', 'Yearly')],
                                        required=True, default='monthly',
                                        string='Policy Coverage', help="During of the policy")
