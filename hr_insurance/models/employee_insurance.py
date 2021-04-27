@@ -33,7 +33,7 @@ class EmployeeInsurance(models.Model):
 
     @api.onchange('policy_id')
     def _compute_amount_company(self):
-        if self.policy_id.insure_type == "SIA":
+        if self.policy_id.id.insure_type == "SIA":
             self.company_amount = self.policy_id.company_percentage/100 * self.employee_id.contract_id.sia
 
         else:
@@ -42,12 +42,12 @@ class EmployeeInsurance(models.Model):
 
     @api.onchange('policy_id')
     def _compute_amount_personal(self):
-        if self.policy_id.insure_type == "SIA":
+        if self.policy_id.id.insure_type == "SIA":
 
-            self.personal_amount = self.policy_id.personal_percentage / 100 * self.employee_id.contract_id.sia
+            self.personal_amount = self.policy_id.id.personal_percentage / 100 * self.employee_id.contract_id.sia
         else:
-            
-            self.personal_amount = self.policy_id.personal_percentage / 100 * self.employee_id.contract_id.hra
+
+            self.personal_amount = self.policy_id.id.personal_percentage / 100 * self.employee_id.contract_id.hra
 
     def get_status(self):
         current_datetime = datetime.now()
