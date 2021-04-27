@@ -109,23 +109,23 @@ class HrInsurance(models.Model):
                 if x < current_datetime:
                     if y >= current_datetime:
                         if ins.policy_id.name == "养老保险":
-                            ins_amount_pesion_personal = ins_amount_pesion_personal + ins.sum_personal_insured
-                            ins_amount_pesion_company = ins_amount_pesion_company + ins.sum_company_insured
+                            ins_amount_pesion_personal = ins_amount_pesion_personal + ins.personal_amount
+                            ins_amount_pesion_company = ins_amount_pesion_company + ins.company_amount
                         elif ins.policy_id.name == "医疗保险":
-                            ins_amount_medical_personal = ins_amount_medical_personal + ins.sum_personal_insured
-                            ins_amount_medical_company = ins_amount_medical_company + ins.sum_company_insured
+                            ins_amount_medical_personal = ins_amount_medical_personal + ins.personal_amount
+                            ins_amount_medical_company = ins_amount_medical_company + ins.company_amount
                         elif ins.policy_id.name == "失业保险":
-                            ins_amount_unemployment_personal = ins_amount_unemployment_personal + ins.sum_personal_insured
-                            ins_amount_unemployment_company = ins_amount_unemployment_company + ins.sum_company_insured
+                            ins_amount_unemployment_personal = ins_amount_unemployment_personal + ins.personal_amount
+                            ins_amount_unemployment_company = ins_amount_unemployment_company + ins.company_amount
                         elif ins.policy_id.name == "生育保险":
-                            ins_amount_fertility_personal = ins_amount_fertility_personal + ins.sum_personal_insured
-                            ins_amount_fertility_company = ins_amount_fertility_company + ins.sum_company_insured
+                            ins_amount_fertility_personal = ins_amount_fertility_personal + ins.personal_amount
+                            ins_amount_fertility_company = ins_amount_fertility_company + ins.company_amount
                         elif ins.policy_id.name == "工伤保险":
-                            ins_amount_injury_personal = ins_amount_injury_personal + ins.sum_personal_insured
-                            ins_amount_injury_company = ins_amount_injury_company + ins.sum_company_insured
+                            ins_amount_injury_personal = ins_amount_injury_personal + ins.personal_amount
+                            ins_amount_injury_company = ins_amount_injury_company + ins.company_amount
                         elif ins.policy_id.name == "住房公积金":
-                            ins_amount_hf_personal = ins_amount_hf_personal + ins.sum_personal_insured
-                            ins_amount_hf_company = ins_amount_hf_company + ins.sum_company_insured
+                            ins_amount_hf_personal = ins_amount_hf_personal + ins.personal_amount
+                            ins_amount_hf_company = ins_amount_hf_company + ins.company_amount
 
         emp.insurance_pesion_personal = ins_amount_pesion_personal
         emp.insurance_pesion_company = ins_amount_pesion_company
