@@ -108,22 +108,22 @@ class HrInsurance(models.Model):
                 y = str(ins.date_to)
                 if x < current_datetime:
                     if y >= current_datetime:
-                        if ins.name == "养老保险":
+                        if ins.policy_id.name == "养老保险":
                             ins_amount_pesion_personal = ins_amount_pesion_personal + ins.sum_personal_insured
                             ins_amount_pesion_company = ins_amount_pesion_company + ins.sum_company_insured
-                        elif ins.name == "医疗保险":
+                        elif ins.policy_id.name == "医疗保险":
                             ins_amount_medical_personal = ins_amount_medical_personal + ins.sum_personal_insured
                             ins_amount_medical_company = ins_amount_medical_company + ins.sum_company_insured
-                        elif ins.name == "失业保险":
+                        elif ins.policy_id.name == "失业保险":
                             ins_amount_unemployment_personal = ins_amount_unemployment_personal + ins.sum_personal_insured
                             ins_amount_unemployment_company = ins_amount_unemployment_company + ins.sum_company_insured
-                        elif ins.name == "生育保险":
+                        elif ins.policy_id.name == "生育保险":
                             ins_amount_fertility_personal = ins_amount_fertility_personal + ins.sum_personal_insured
                             ins_amount_fertility_company = ins_amount_fertility_company + ins.sum_company_insured
-                        elif ins.name == "工伤保险":
+                        elif ins.policy_id.name == "工伤保险":
                             ins_amount_injury_personal = ins_amount_injury_personal + ins.sum_personal_insured
                             ins_amount_injury_company = ins_amount_injury_company + ins.sum_company_insured
-                        elif ins.name == "住房公积金":
+                        elif ins.policy_id.name == "住房公积金":
                             ins_amount_hf_personal = ins_amount_hf_personal + ins.sum_personal_insured
                             ins_amount_hf_company = ins_amount_hf_company + ins.sum_company_insured
 
