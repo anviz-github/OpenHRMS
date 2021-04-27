@@ -18,8 +18,8 @@ class EmployeeInsurance(models.Model):
     policy_coverage = fields.Selection([('monthly', 'Monthly'), ('yearly', 'Yearly')],
                                        required=True, default='monthly',
                                        string='Policy Coverage', help="During of the policy")
-    company_amount = fields.Float(string='Company Amount', required=True, compute='_compute_amount', help="Company amount")
-    personal_amount = fields.Float(string='Personal Amount', required=True, compute='_compute_amount', help="Personal amount")
+    company_amount = fields.Float(string='Company Amount', required=True, compute='_compute_amount_company', help="Company amount")
+    personal_amount = fields.Float(string='Personal Amount', required=True, compute='_compute_amount_personal', help="Personal amount")
 
     date_from = fields.Date(string='Date From',
                             default=time.strftime('%Y-%m-%d'), readonly=True, help="Start date")
@@ -32,14 +32,22 @@ class EmployeeInsurance(models.Model):
                                  default=lambda self: self.env.user.company_id)
 
     @api.onchange('policy_id')
-    def _compute_amount(self):
+    def _compute_amount_company(self):
         if self.policy_id.insure_type == "SIA":
             self.company_amount = self.policy_id.company_percentage/100 * self.employee_id.contract_id.sia
-            self.personal_amount = self.policy_id.personal_percentage/100 * self.employee_id.contract_id.sia
+
         else:
             self.company_amount = self.policy_id.company_percentage/100 * self.employee_id.contract_id.hra
-            self.personal_amount = self.policy_id.personal_percentage/100 * self.employee_id.contract_id.hra
 
+
+    @api.onchange('policy_id')
+    def _compute_amount_personal(self):
+        if self.policy_id.insure_type == "SIA":
+
+            self.personal_amount = self.policy_id.personal_percentage / 100 * self.employee_id.contract_id.sia
+        else:
+            
+            self.personal_amount = self.policy_id.personal_percentage / 100 * self.employee_id.contract_id.hra
 
     def get_status(self):
         current_datetime = datetime.now()
