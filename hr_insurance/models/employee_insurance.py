@@ -33,7 +33,7 @@ class EmployeeInsurance(models.Model):
 
     @api.onchange('policy_id')
     def _compute_amount(self):
-        if policy_id.insure_type == "ISA":
+        if self.policy_id.insure_type == "ISA":
             self.company_amount = self.policy_id.company_percentage * self.employee_id.contract_id.isa
         else:
             self.company_amount = self.policy_id.company_percentage * self.employee_id.contract_id.hra
