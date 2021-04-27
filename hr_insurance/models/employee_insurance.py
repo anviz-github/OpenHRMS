@@ -18,6 +18,9 @@ class EmployeeInsurance(models.Model):
     policy_coverage = fields.Selection([('monthly', 'Monthly'), ('yearly', 'Yearly')],
                                        required=True, default='monthly',
                                        string='Policy Coverage', help="During of the policy")
+    company_amount = fields.Float(string='Company Amount', required=True, compute='_compute_amount', help="Company amount")
+    personal_amount = fields.Float(string='Personal Amount', required=True, compute='_compute_amount', help="Personal amount")
+
     date_from = fields.Date(string='Date From',
                             default=time.strftime('%Y-%m-%d'), readonly=True, help="Start date")
     date_to = fields.Date(string='Date To',   readonly=True, help="End date",
@@ -27,6 +30,14 @@ class EmployeeInsurance(models.Model):
                              default='active', string="State",compute='get_status')
     company_id = fields.Many2one('res.company', string='Company', required=True, help="Company",
                                  default=lambda self: self.env.user.company_id)
+
+    @api.onchange('policy_id')
+    def _compute_amount(self):
+        if policy_id.insure_type == "ISA":
+            self.company_amount = self.policy_id.company_percentage * self.employee_id.contract_id.isa
+        else:
+            self.company_amount = self.policy_id.company_percentage * self.employee_id.contract_id.hra
+
 
     def get_status(self):
         current_datetime = datetime.now()

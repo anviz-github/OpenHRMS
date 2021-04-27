@@ -31,7 +31,7 @@ class HrContract(models.Model):
     other_allowance = fields.Monetary(string="Other Allowance", help="Other allowances")
 
     sia = fields.Monetary(string='SIA', tracking=True, help="Social insurance allowance base.")
-    trial_wage = fields.Monetary('Trail Wage', required=True, tracking=True, help="Employee's monthly trial wage.")
+    trial_wage = fields.Monetary('Trial Wage', required=True, tracking=True, help="Employee's monthly trial wage.")
     additional_wage = fields.Monetary('Additional Wage', required=True, tracking=True, help="Employee's monthly additional wage.")
 
     def get_all_structures(self):
