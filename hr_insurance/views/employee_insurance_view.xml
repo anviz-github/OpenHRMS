@@ -30,8 +30,8 @@
                             <field name="insurance_injury_company" >%</field>
                         </group>
                         <group>
-                            <field name="deduced_amount_per_year"/>
-                            <field name="deduced_amount_per_month"/>
+                            <field name="deduced_amount_personal"/>
+                            <field name="deduced_amount_company"/>
                         </group>
                     </group>
                     <field name="insurance" context="{'default_employee_id':id}"/>

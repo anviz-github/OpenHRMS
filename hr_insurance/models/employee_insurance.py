@@ -13,7 +13,7 @@ class EmployeeInsurance(models.Model):
 
     employee_id = fields.Many2one('hr.employee', string='Employee', required=True, help="Employee")
     policy_id = fields.Many2one('insurance.policy', string='Policy', required=True, help="Policy")
-    amount = fields.Float(string='Premium', required=True, help="Policy amount")
+    amount = fields.Float(string='Premium', required=False, help="Policy amount")
     sum_insured = fields.Float(string="Sum Insured", required=True, help="Insured sum")
     policy_coverage = fields.Selection([('monthly', 'Monthly'), ('yearly', 'Yearly')],
                                        required=True, default='monthly',
@@ -84,6 +84,9 @@ class HrInsurance(models.Model):
     insurance_fertility_company = fields.Float(string="fertility company", compute="get_insure_subtotal")
     insurance_injury_company = fields.Float(string="injury company", compute="get_insure_subtotal")
 
+    deduced_amount_company = fields.Float(string="Salary deduced company per month", compute="get_deduced_amount", help="Amount that is deduced from the salary company per month")
+    deduced_amount_personal = fields.Float(string="Salary deduced personal per month", compute="get_deduced_amount",
+                 help="Amount that is deduced from the salary personal per month")
     @api.onchange('insurance')
     def get_insure_subtotal(self):
         current_date = datetime.now()
@@ -140,21 +143,27 @@ class HrInsurance(models.Model):
         emp.insurance_hf_personal = ins_amount_hf_personal
         emp.insurance_hf_company = ins_amount_hf_company
     def get_deduced_amount(self):
-        current_date = datetime.now()
-        current_datetime = datetime.strftime(current_date, "%Y-%m-%d ")
-        for emp in self:
-            ins_amount = 0
-            for ins in emp.insurance:
-                x = str(ins.date_from)
-                y = str(ins.date_to)
-                if x < current_datetime:
-                    if y > current_datetime:
-                        if ins.policy_coverage == 'monthly':
-                            ins_amount = ins_amount + (ins.amount*12)
-                        else:
-                            ins_amount = ins_amount + ins.amount
-            emp.deduced_amount_per_year = ins_amount-((ins_amount*emp.insurance_percentage)/100)
-            emp.deduced_amount_per_month = emp.deduced_amount_per_year/12
+        self.deduced_amount_company = self.insurance_pesion_company + self.insurance_medical_company +\
+                                      self.insurance_unemployment_company + self.insurance_hf_company +self.insurance_fertility_company + \
+                                      self.insurance_injury_company
+        self.deduced_amount_personal = self.insurance_pesion_personal + self.insurance_medical_personal + \
+                                      self.insurance_unemployment_personal + self.insurance_hf_personal + self.insurance_fertility_personal + \
+                                      self.insurance_injury_personal
+        # current_date = datetime.now()
+        # current_datetime = datetime.strftime(current_date, "%Y-%m-%d ")
+        # for emp in self:
+        #     ins_amount = 0
+        #     for ins in emp.insurance:
+        #         x = str(ins.date_from)
+        #         y = str(ins.date_to)
+        #         if x < current_datetime:
+        #             if y > current_datetime:
+        #                 if ins.policy_coverage == 'monthly':
+        #                     ins_amount = ins_amount + (ins.amount*12)
+        #                 else:
+        #                     ins_amount = ins_amount + ins.amount
+        #     emp.deduced_amount_per_year = ins_amount-((ins_amount*emp.insurance_percentage)/100)
+        #     emp.deduced_amount_per_month = emp.deduced_amount_per_year/12
 
 
 class InsuranceRuleInput(models.Model):
