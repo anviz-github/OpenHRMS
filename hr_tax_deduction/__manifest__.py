@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-{'name': "Employee  tax_deductions ",
+{'name': "Tax_deductions ",
  'summary': """
        Multiple tax_deductions for employee""",
  'description': """

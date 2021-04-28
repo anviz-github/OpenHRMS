@@ -50,18 +50,18 @@ class HrInsurance(models.Model):
 
     @api.onchange('deduction')
     def get_tax_deduction_total(self):
-        # current_date = datetime.now()
-        # current_date = datetime.strftime(current_date, "%Y-%m-%d ")
+        current_date = datetime.now()
+        current_date = datetime.strftime(current_date, "%Y-%m-%d ")
 
 
-        lastMonth = (datetime.today().replace(day=1) - timedelta(days=1)).date()
-        #current_date = datetime.strftime(lastMonth, "%Y-%m-%d ")
+
+        current_date = datetime.strftime(lastMonth, "%Y-%m-%d ")
 
         for emp in self:
             ins_amount = 0
             for ins in emp.deduction:
-                x = ins.date_from
-                y = ins.date_to
+                x = str(ins.date_from)
+                y = str(ins.date_to)
                 if x < lastMonth:
                     if y >= lastMonth:
                         ins_amount = ins_amount + ins.deduction_amount
