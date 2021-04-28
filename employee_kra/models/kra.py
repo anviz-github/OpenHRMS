@@ -50,7 +50,7 @@ class hr_employee(models.Model):
         final_score_this = 0
         final_score_last = 0
         for rec in self:
-            kras = self.env['employee.kra'].search([('employee_id', '=', rec.id)])\
+            kras = self.env['employee.kra'].search([('employee_id', '=', rec.id)])
                 #, ('name', '=', str(month)),
                 #                                    ('year', '=', str(year)), ('state', '=', 'done')])
             if kras:
