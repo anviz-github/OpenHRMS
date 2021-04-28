@@ -18,8 +18,8 @@ class EmployeeInsurance(models.Model):
     policy_coverage = fields.Selection([('monthly', 'Monthly'), ('yearly', 'Yearly')],
                                        required=True, default='monthly',
                                        string='Policy Coverage', help="During of the policy")
-    company_amount = fields.Float(string='Company Amount', required=True, compute='_compute_amount_company', help="Company amount")
-    personal_amount = fields.Float(string='Personal Amount', required=True, compute='_compute_amount_personal', help="Personal amount")
+    company_amount = fields.Float(string='Company Amount', required=True, compute='_compute_amount', help="Company amount")
+    personal_amount = fields.Float(string='Personal Amount', required=True, compute='_compute_amount', help="Personal amount")
 
     date_from = fields.Date(string='Date From',
                             default=time.strftime('%Y-%m-%d'), readonly=True, help="Start date")
