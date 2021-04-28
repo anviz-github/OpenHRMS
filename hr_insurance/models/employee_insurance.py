@@ -35,7 +35,7 @@ class EmployeeInsurance(models.Model):
     def _compute_amount(self):
         for id in self.policy_id:
 
-            if policy.insure_type == "SIA":
+            if id.insure_type == "SIA":
                 self.company_amount = id.company_percentage/100 * self.employee_id.contract_id.sia
                 self.personal_amount = id.personal_percentage / 100 * self.employee_id.contract_id.sia
             else:
