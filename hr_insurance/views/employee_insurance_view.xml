@@ -61,9 +61,9 @@
                                 <field name="policy_coverage"/>
                                 <label for="date_from" string="Policy Period"/>
 			<div>
-				<field name="date_from" class="oe_inline" on_change="1" modifiers="{'readonly': [['state', 'not in', ['draft']]], 'required': true}"/>
+				<field name="date_from" class="oe_inline" on_change="1" modifiers="{'readonly': [['state', 'not in', ['expired']]], 'required': true}"/>
 				  -
-				<field name="date_to" class="oe_inline" on_change="1" modifiers="{'readonly': [['state', 'not in', ['draft']]], 'required': true}"/>
+				<field name="date_to" class="oe_inline" on_change="1" modifiers="{'readonly': [['state', 'not in', ['expired']]], 'required': true}"/>
 			</div>
                             </group>
                             <group>
@@ -93,7 +93,7 @@
                     <field name="company_amount"/>
                     <field name="personal_amount"/>
                     <field name="date_from" />
-				<field name="date_to"/>
+				    <field name="date_to"/>
                     <field name="company_id"/>
                 </tree>
             </field>
