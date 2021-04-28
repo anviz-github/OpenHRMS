@@ -27,27 +27,22 @@ class EmployeeInsurance(models.Model):
                           default=str(datetime.now() + relativedelta.relativedelta(months=+1, day=1, days=-1))[:10])
     state = fields.Selection([('active', 'Active'),
                               ('expired', 'Expired'), ],
-                             default='active', string="State",compute='get_status')
+                             default='active', string="State", compute='get_status')
     company_id = fields.Many2one('res.company', string='Company', required=True, help="Company",
                                  default=lambda self: self.env.user.company_id)
 
     @api.onchange('policy_id')
-    def _compute_amount_company(self):
-        if self.policy_id.id.insure_type == "SIA":
-            self.company_amount = self.policy_id.company_percentage/100 * self.employee_id.contract_id.sia
+    def _compute_amount(self):
+        for id in self.policy_id:
+            policy = self.env['insurance.policy'].search(['id', '=' id])
+            if policy.insure_type == "SIA":
+                self.company_amount = policy.company_percentage/100 * self.employee_id.contract_id.sia
+                self.personal_amount = policy.personal_percentage / 100 * self.employee_id.contract_id.sia
+            else:
+                self.company_amount = policy.company_percentage/100 * self.employee_id.contract_id.hra
+                self.personal_amount = policy.personal_percentage / 100 * self.employee_id.contract_id.hra
 
-        else:
-            self.company_amount = self.policy_id.company_percentage/100 * self.employee_id.contract_id.hra
 
-
-    @api.onchange('policy_id')
-    def _compute_amount_personal(self):
-        if self.policy_id.id.insure_type == "SIA":
-
-            self.personal_amount = self.policy_id.id.personal_percentage / 100 * self.employee_id.contract_id.sia
-        else:
-
-            self.personal_amount = self.policy_id.id.personal_percentage / 100 * self.employee_id.contract_id.hra
 
     def get_status(self):
         current_datetime = datetime.now()
