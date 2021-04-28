@@ -22,8 +22,8 @@ class EmployeeInsurance(models.Model):
     personal_amount = fields.Float(string='Personal Amount', required=True, compute='_compute_amount', help="Personal amount")
 
     date_from = fields.Date(string='Date From',
-                            default=time.strftime('%Y-%m-%d'), readonly=True, help="Start date")
-    date_to = fields.Date(string='Date To',   readonly=True, help="End date",
+                            default=time.strftime('%Y-%m-%d'), readonly=False, help="Start date")
+    date_to = fields.Date(string='Date To',   readonly=False, help="End date",
                           default=str(datetime.now() + relativedelta.relativedelta(months=+1, day=1, days=-1))[:10])
     state = fields.Selection([('active', 'Active'),
                               ('expired', 'Expired'), ],
@@ -56,13 +56,14 @@ class EmployeeInsurance(models.Model):
                 else:
                     i.state = 'expired'
 
-    @api.constrains('policy_coverage')
-    @api.onchange('policy_coverage')
-    def get_policy_period(self):
-        if self.policy_coverage == 'monthly':
-            self.date_to = str(datetime.now() + relativedelta.relativedelta(months=+1, day=1, days=-1))[:10]
-        if self.policy_coverage == 'yearly':
-            self.date_to = str(datetime.now() + relativedelta.relativedelta(months=+12))[:10]
+    # @api.constrains('policy_coverage')
+    # @api.onchange('policy_coverage')
+    # def get_policy_period(self):
+    #     for record in self:
+    #         if self.policy_coverage == 'monthly':
+    #             self.date_to = str(datetime.now() + relativedelta.relativedelta(months=+1, day=1, days=-1))[:10]
+    #         if self.policy_coverage == 'yearly':
+    #             self.date_to = str(datetime.now() + relativedelta.relativedelta(months=+12))[:10]
 
 
 class HrInsurance(models.Model):
