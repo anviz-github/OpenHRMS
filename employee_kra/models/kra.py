@@ -53,10 +53,10 @@ class hr_employee(models.Model):
             kras = self.env['employee.kra'].search([('employee_id', '=', rec.id)])
                 #, ('name', '=', str(month)),
                 #                                    ('year', '=', str(year)), ('state', '=', 'done')])
-            if kras:
-                for question_id in kras.kra_question_ids:
-                    final_score_this = final_score_this + question_id.final_score
-                rec.kra_final_score_this_month = final_score_this
+            #if kras:
+            for question_id in kras.kra_question_ids:
+                final_score_this = final_score_this + question_id.final_score
+            rec.kra_final_score_this_month = final_score_this
 
             kras_last = self.env['employee.kra'].search([('employee_id', '=', rec.id), ('name', '=', str(last_month)),
                                                     ('year', '=', str(year)), ('state', '=', 'done')])
