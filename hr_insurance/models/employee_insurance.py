@@ -33,9 +33,8 @@ class EmployeeInsurance(models.Model):
 
     @api.onchange('policy_id')
     def _compute_amount(self):
-        print('policy', self.policy_id)
-        for id in self.policy_id:
 
+        for id in self.policy_id:
             if id.insure_type == "SIA":
                 self.company_amount = id.company_percentage/100 * self.employee_id.contract_id.sia
                 self.personal_amount = id.personal_percentage/100 * self.employee_id.contract_id.sia
@@ -153,21 +152,22 @@ class HrInsurance(models.Model):
         self.deduced_amount_personal = self.insurance_pesion_personal + self.insurance_medical_personal + \
                                       self.insurance_unemployment_personal + self.insurance_hf_personal + self.insurance_fertility_personal + \
                                       self.insurance_injury_personal
-        # current_date = datetime.now()
-        # current_datetime = datetime.strftime(current_date, "%Y-%m-%d ")
-        # for emp in self:
-        #     ins_amount = 0
-        #     for ins in emp.insurance:
-        #         x = str(ins.date_from)
-        #         y = str(ins.date_to)
-        #         if x < current_datetime:
-        #             if y > current_datetime:
-        #                 if ins.policy_coverage == 'monthly':
-        #                     ins_amount = ins_amount + (ins.amount*12)
-        #                 else:
-        #                     ins_amount = ins_amount + ins.amount
-        #     emp.deduced_amount_per_year = ins_amount-((ins_amount*emp.insurance_percentage)/100)
-        #     emp.deduced_amount_per_month = emp.deduced_amount_per_year/12
+        current_date = datetime.now()
+        current_datetime = datetime.strftime(current_date, "%Y-%m-%d ")
+        for emp in self:
+            ins_amount = 0
+            for ins in emp.insurance:
+                x = str(ins.date_from)
+                y = str(ins.date_to)
+                if x < current_datetime:
+                    if y > current_datetime:
+                        if ins.policy_coverage == 'monthly':
+                            ins_amount = ins_amount + (ins.deduced_amount_company+ins.deduced_amount_personal)*12
+                        else:
+                            ins_amount = ins_amount + ins.deduced_amount_company+ins.deduced_amount_personal
+            emp.deduced_amount_per_year = ins_amount
+                                          #-((ins_amount*emp.insurance_percentage)/100)
+            emp.deduced_amount_per_month = emp.deduced_amount_per_year/12
 
 
 class InsuranceRuleInput(models.Model):
