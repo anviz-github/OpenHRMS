@@ -24,6 +24,11 @@
                     <field name="additional_wage" nolabel="1"/>
                     <span>/ month</span>
                 </div>
+                <label for="performance_bonus"/>
+                <div class="o_row" name="performance_bonus">
+                    <field name="performance_bonus" nolabel="1"/>
+                    <span>/ month</span>
+                </div>
             </xpath>
             <xpath expr="//field[@name='type_id']" position="after">
                 <field name="struct_id" required="1"/>

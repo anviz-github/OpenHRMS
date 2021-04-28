@@ -33,7 +33,8 @@ class HrContract(models.Model):
     sia = fields.Monetary(string='SIA', tracking=True, help="Social insurance allowance base.")
     trial_wage = fields.Monetary('Trial Wage', required=True, tracking=True, help="Employee's monthly trial wage.")
     additional_wage = fields.Monetary('Additional Wage', required=True, tracking=True, help="Employee's monthly additional wage.")
-
+    performance_bonus = fields.Monetary('Performance Bonus', required=False, tracking=True,
+                                      help="Employee's monthly performance bonus.")
     def get_all_structures(self):
         """
         @return: the structures linked to the given contracts, ordered by hierachy (parent=False first,
