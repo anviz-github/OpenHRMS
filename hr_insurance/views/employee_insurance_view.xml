@@ -90,8 +90,8 @@
                     <field name="policy_coverage"/>
                     <!--field name="sum_insured"/>
                     <field name="amount"/-->
-                    <field name="deduced_amount_company"/>
-                    <field name="deduced_amount_personal"/>
+                    <field name="company_amount"/>
+                    <field name="personal_amount"/>
                     <field name="date_from" />
 				<field name="date_to"/>
                     <field name="company_id"/>
