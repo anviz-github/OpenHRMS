@@ -39,8 +39,8 @@ class EmployeeInsurance(models.Model):
                 self.company_amount = id.company_percentage/100 * self.employee_id.contract_id.sia
                 self.personal_amount = id.personal_percentage / 100 * self.employee_id.contract_id.sia
             else:
-                self.company_amount = policy.company_percentage/100 * self.employee_id.contract_id.hra
-                self.personal_amount = policy.personal_percentage / 100 * self.employee_id.contract_id.hra
+                self.company_amount = id.company_percentage/100 * self.employee_id.contract_id.hra
+                self.personal_amount = id.personal_percentage / 100 * self.employee_id.contract_id.hra
 
 
 
