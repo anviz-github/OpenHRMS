@@ -33,7 +33,7 @@ class EmployeeInsurance(models.Model):
 
     @api.onchange('policy_id')
     def _compute_amount(self):
-        for record in self：
+        for record in self:
             for id in record.policy_id:
                 if id.insure_type == "SIA":
                     record.company_amount = id.company_percentage/100 * record.employee_id.contract_id.sia
