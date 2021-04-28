@@ -154,20 +154,23 @@ class HrInsurance(models.Model):
                                       self.insurance_injury_personal
         current_date = datetime.now()
         current_datetime = datetime.strftime(current_date, "%Y-%m-%d ")
-        for emp in self:
-            ins_amount = 0
-            for ins in emp.insurance:
-                x = str(ins.date_from)
-                y = str(ins.date_to)
-                if x < current_datetime:
-                    if y > current_datetime:
-                        if ins.policy_coverage == 'monthly':
-                            ins_amount = ins_amount + (ins.deduced_amount_company+ins.deduced_amount_personal)*12
-                        else:
-                            ins_amount = ins_amount + ins.deduced_amount_company+ins.deduced_amount_personal
-            emp.deduced_amount_per_year = ins_amount
-                                          #-((ins_amount*emp.insurance_percentage)/100)
-            emp.deduced_amount_per_month = emp.deduced_amount_per_year/12
+        self.deduced_amount_per_month = self.deduced_amount_company + self.deduced_amount_personal
+        self.deduced_amount_per_year = self.deduced_amount_per_month *12
+
+        # for emp in self:
+        #     ins_amount = 0
+        #     for ins in emp.insurance:
+        #         x = str(ins.date_from)
+        #         y = str(ins.date_to)
+        #         if x < current_datetime:
+        #             if y > current_datetime:
+        #                 if ins.policy_coverage == 'monthly':
+        #                     ins_amount = ins_amount + (ins.deduced_amount_company+ins.deduced_amount_personal)*12
+        #                 else:
+        #                     ins_amount = ins_amount + ins.deduced_amount_company+ins.deduced_amount_personal
+        #     emp.deduced_amount_per_year = ins_amount
+        #                                   #-((ins_amount*emp.insurance_percentage)/100)
+        #     emp.deduced_amount_per_month = emp.deduced_amount_per_year/12
 
 
 class InsuranceRuleInput(models.Model):
