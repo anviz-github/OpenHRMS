@@ -55,7 +55,7 @@ class HrInsurance(models.Model):
 
 
 
-        current_date = datetime.strftime(lastMonth, "%Y-%m-%d ")
+        #current_date = datetime.strftime(lastMonth, "%Y-%m-%d ")
 
         for emp in self:
             ins_amount = 0
