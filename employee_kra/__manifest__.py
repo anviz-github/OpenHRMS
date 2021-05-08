@@ -60,7 +60,7 @@
         'report/value_rating_report.xml',
         'wizard/create_kra_view.xml',
         'views/menu_items.xml',
-        'views/employee_kra_view.xml',
+
     ],
     'images': [
         'static/description/hr_evaluation_kra_odoo_cover.jpg',
