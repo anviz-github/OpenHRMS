@@ -52,11 +52,11 @@ class payroll_kra(models.Model):
             final_score_last = 0
             this_records = 0
             last_records = 0
-            print('employee kra', emp.kras)
+
             for kra_id in emp.kras:
 
                 questions = self.env['employee.kra.question'].search([('employee_kra_id', '=', kra_id.id)])
-                print('questions', questions)
+
                 for question in questions:
                     if kra_id.name == str(this_month) and kra_id.year.name == str(year):
                         this_records += 1
