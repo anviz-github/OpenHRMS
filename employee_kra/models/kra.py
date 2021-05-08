@@ -35,36 +35,6 @@ class hr_employee(models.Model):
     employee_code = fields.Integer('Employee Code')
     kra_count = fields.Integer(compute='_kra_count', string="KRA #")
     value_rating_count = fields.Integer(compute='_value_rating_count', string="Value Ratings")
-    kra_final_score_this_month = fields.Float(compute='_get_score', string='This Month Final Score', store=True,
-                                              readonly='1')
-    kra_final_score_last_month = fields.Float(compute='_get_score', string='Last Month Final Score', store=True,
-                                              readonly='1')
-
-    def _get_score(self):
-        month = datetime.now().month
-        year = datetime.now().year
-        if month == 1:
-            last_month = 12
-        else:
-            last_month = month - 1
-        final_score_this = 0
-        final_score_last = 0
-        for rec in self:
-            kras = self.env['employee.kra'].search([('employee_id', '=', rec.id)])
-                #, ('name', '=', str(month)),
-                #                                    ('year', '=', str(year)), ('state', '=', 'done')])
-            #if kras:
-            for question_id in kras.kra_question_ids:
-                final_score_this = final_score_this + question_id.final_score
-            rec.kra_final_score_this_month = final_score_this
-
-            kras_last = self.env['employee.kra'].search([('employee_id', '=', rec.id), ('name', '=', str(last_month)),
-                                                    ('year', '=', str(year)), ('state', '=', 'done')])
-            if kras_last:
-                for question_id in kras_last.kra_question_ids:
-                    final_score_last = final_score_last + question_id.final_score
-                rec.kra_final_score_last_month = final_score_last
-
 
     
     def action_kra_tree_view(self):
