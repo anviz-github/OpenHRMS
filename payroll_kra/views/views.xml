@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="payroll_kra.list">
+      <field name="name">payroll_kra list</field>
+      <field name="model">payroll_kra.payroll_kra</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="payroll_kra.action_window">
+      <field name="name">payroll_kra window</field>
+      <field name="res_model">payroll_kra.payroll_kra</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="payroll_kra.action_server">
+      <field name="name">payroll_kra server</field>
+      <field name="model_id" ref="model_payroll_kra_payroll_kra"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="payroll_kra" id="payroll_kra.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="payroll_kra.menu_1" parent="payroll_kra.menu_root"/>
+    <menuitem name="Menu 2" id="payroll_kra.menu_2" parent="payroll_kra.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="payroll_kra.menu_1_list" parent="payroll_kra.menu_1"
+              action="payroll_kra.action_window"/>
+    <menuitem name="Server to list" id="payroll_kra" parent="payroll_kra.menu_2"
+              action="payroll_kra.action_server"/>
+-->
+  </data>
+</odoo>
