@@ -155,7 +155,8 @@ class HrInsurance(models.Model):
                                       self.insurance_injury_personal
         current_date = datetime.now()
         current_datetime = datetime.strftime(current_date, "%Y-%m-%d ")
-        self.deduced_amount_per_month = self.deduced_amount_company + self.deduced_amount_personal
+        self.deduced_amount_per_month = self.deduced_amount_personal
+            #self.deduced_amount_company + self.deduced_amount_personal
         self.deduced_amount_per_year = self.deduced_amount_per_month *12
 
         # for emp in self:
