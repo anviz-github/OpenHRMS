@@ -115,6 +115,7 @@ class HrInsurance(models.Model):
                 y = str(ins.date_to)
                 if x < current_date:
                     if y >= current_date:
+                        print("name", dict(ins.policy_id._fields['name'].selection).get(ins.policy_id.name))
                         if ins.policy_id.name == "Pension Insurance" or ins.policy_id.name == "养老保险":
                             ins_amount_pesion_personal = ins_amount_pesion_personal + ins.personal_amount
                             ins_amount_pesion_company = ins_amount_pesion_company + ins.company_amount
