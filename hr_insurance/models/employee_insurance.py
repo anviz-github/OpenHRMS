@@ -115,22 +115,22 @@ class HrInsurance(models.Model):
                 y = str(ins.date_to)
                 if x < current_date:
                     if y >= current_date:
-                        if ins.policy_id.name == "养老保险":
+                        if ins.policy_id.name == "Pension Insurance":
                             ins_amount_pesion_personal = ins_amount_pesion_personal + ins.personal_amount
                             ins_amount_pesion_company = ins_amount_pesion_company + ins.company_amount
-                        elif ins.policy_id.name == "医疗保险":
+                        elif ins.policy_id.name == "Medical Insurance":
                             ins_amount_medical_personal = ins_amount_medical_personal + ins.personal_amount
                             ins_amount_medical_company = ins_amount_medical_company + ins.company_amount
-                        elif ins.policy_id.name == "失业保险":
+                        elif ins.policy_id.name == "Unemployment Insurance":
                             ins_amount_unemployment_personal = ins_amount_unemployment_personal + ins.personal_amount
                             ins_amount_unemployment_company = ins_amount_unemployment_company + ins.company_amount
-                        elif ins.policy_id.name == "生育保险":
+                        elif ins.policy_id.name == "Childbirth Insurance":
                             ins_amount_fertility_personal = ins_amount_fertility_personal + ins.personal_amount
                             ins_amount_fertility_company = ins_amount_fertility_company + ins.company_amount
-                        elif ins.policy_id.name == "工伤保险":
+                        elif ins.policy_id.name == "Injury Insurance":
                             ins_amount_injury_personal = ins_amount_injury_personal + ins.personal_amount
                             ins_amount_injury_company = ins_amount_injury_company + ins.company_amount
-                        elif ins.policy_id.name == "住房公积金":
+                        elif ins.policy_id.name == "House Fund":
                             ins_amount_hf_personal = ins_amount_hf_personal + ins.personal_amount
                             ins_amount_hf_company = ins_amount_hf_company + ins.company_amount
 
