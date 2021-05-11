@@ -115,22 +115,22 @@ class HrInsurance(models.Model):
                 y = str(ins.date_to)
                 if x < current_date:
                     if y >= current_date:
-                        if ins.policy_id.name == "Pension Insurance":
+                        if ins.policy_id.name_get() == "Pension Insurance":
                             ins_amount_pesion_personal = ins_amount_pesion_personal + ins.personal_amount
                             ins_amount_pesion_company = ins_amount_pesion_company + ins.company_amount
-                        elif ins.policy_id.name == "Medical Insurance":
+                        elif ins.policy_id.name_get() == "Medical Insurance":
                             ins_amount_medical_personal = ins_amount_medical_personal + ins.personal_amount
                             ins_amount_medical_company = ins_amount_medical_company + ins.company_amount
-                        elif ins.policy_id.name == "Unemployment Insurance":
+                        elif ins.policy_id.name_get() == "Unemployment Insurance":
                             ins_amount_unemployment_personal = ins_amount_unemployment_personal + ins.personal_amount
                             ins_amount_unemployment_company = ins_amount_unemployment_company + ins.company_amount
-                        elif ins.policy_id.name == "Childbirth Insurance":
+                        elif ins.policy_id.name_get() == "Childbirth Insurance":
                             ins_amount_fertility_personal = ins_amount_fertility_personal + ins.personal_amount
                             ins_amount_fertility_company = ins_amount_fertility_company + ins.company_amount
-                        elif ins.policy_id.name == "Injury Insurance":
+                        elif ins.policy_id.name_get() == "Injury Insurance":
                             ins_amount_injury_personal = ins_amount_injury_personal + ins.personal_amount
                             ins_amount_injury_company = ins_amount_injury_company + ins.company_amount
-                        elif ins.policy_id.name == "House Fund":
+                        elif ins.policy_id.name_get() == "House Fund":
                             ins_amount_hf_personal = ins_amount_hf_personal + ins.personal_amount
                             ins_amount_hf_company = ins_amount_hf_company + ins.company_amount
 
