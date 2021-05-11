@@ -188,5 +188,5 @@ class InsuranceRuleInput(models.Model):
                     if emp_id.deduced_amount_per_month != 0:
                         if result.get('code') == 'INSUR':
                             result['amount'] = emp_id.deduced_amount_per_month
-                           
+
         return res
