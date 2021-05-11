@@ -93,8 +93,8 @@ class HrInsurance(models.Model):
                  help="Amount that is deduced from the salary personal per month")
     @api.onchange('insurance')
     def get_insure_subtotal(self):
-        current_date = datetime.now()
-        current_datetime = datetime.strftime(current_date, "%Y-%m-%d ")
+        current_datetime = datetime.now()
+        current_date = datetime.strftime(current_datetime, "%Y-%m-%d ")
         #lastMonth = (datetime.today().replace(day=1) - timedelta(days=1)).date()
 
         for emp in self:
@@ -113,8 +113,8 @@ class HrInsurance(models.Model):
             for ins in emp.insurance:
                 x = str(ins.date_from)
                 y = str(ins.date_to)
-                if x < current_datetime:
-                    if y >= current_datetime:
+                if x < current_date:
+                    if y >= current_date:
                         if ins.policy_id.name == "养老保险":
                             ins_amount_pesion_personal = ins_amount_pesion_personal + ins.personal_amount
                             ins_amount_pesion_company = ins_amount_pesion_company + ins.company_amount
