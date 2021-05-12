@@ -19,9 +19,19 @@
                     <field name="trial_wage" nolabel="1"/>
                     <span>/ month</span>
                 </div>
+                <label for="additional_wage_trial"/>
+                <div class="o_row" name="additional_wage_trial">
+                    <field name="additional_wage_trial" nolabel="1"/>
+                    <span>/ month</span>
+                </div>
                 <label for="additional_wage"/>
                 <div class="o_row" name="additional_wage">
                     <field name="additional_wage" nolabel="1"/>
+                    <span>/ month</span>
+                </div>
+                <label for="performance_bonus_trial"/>
+                <div class="o_row" name="performance_bonus_trial">
+                    <field name="performance_bonus_trial" nolabel="1"/>
                     <span>/ month</span>
                 </div>
                 <label for="performance_bonus"/>
