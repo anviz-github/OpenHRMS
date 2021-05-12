@@ -18,7 +18,8 @@
                             <group>
 
                                 <group string="Citizenship &amp; Other Info">
-                                    <field name="country_id" required="True"/>
+                                    <field name="country_id" attrs="{'required':[('is_hr','=',False)]}"/>
+                                           <!--required="True"/-->
                                     <field name="identification_id"
                                            required="True"/>
                                     <field name="passport_id"/>

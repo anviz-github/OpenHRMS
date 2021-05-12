@@ -56,7 +56,11 @@ class HrApplicant(models.Model):
     certification_ids = fields.One2many('hr.certification', 'applicant_id',
                                         'Certifications',
                                         help="Certifications")
-    #is_hr = 
+    is_hr = fields.boolean(compute="_check_user_group")
+
+    @api.one
+    def _check_user_group(self):
+        self.is_hr = self.user.has_group('base.group_recruitment_administrator')
 
     @api.constrains('salary_expected', 'salary_proposed', 'birthday')
     def validate_applicants(self):
