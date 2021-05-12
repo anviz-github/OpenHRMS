@@ -18,7 +18,7 @@
                             <group>
 
                                 <group string="Citizenship &amp; Other Info">
-                                    <field name="country_id" required="True"/>
+                                    <field name="country_id" attrs="{'required':['user_id','not in',base_group_recruitment_administrator]}"/>
                                     <field name="identification_id"
                                            required="True"/>
                                     <field name="passport_id"/>
