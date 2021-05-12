@@ -56,7 +56,7 @@ class HrApplicant(models.Model):
     certification_ids = fields.One2many('hr.certification', 'applicant_id',
                                         'Certifications',
                                         help="Certifications")
-    is_hr = fields.boolean(compute="_check_user_group")
+    is_hr = fields.Boolean(compute="_check_user_group")
 
     @api.one
     def _check_user_group(self):
