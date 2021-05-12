@@ -8,7 +8,7 @@
             <field name="arch" type="xml">
 
                 <!--<field name="languages_known" string="Languages Known"/>-->
-                <field name="is_hr" invisible="True"/>
+                <!--field name="is_hr" invisible="True"/-->
                 <field name="partner_id" position="attributes">
                     <attribute name="string">Residential address</attribute>
                 </field>
@@ -19,7 +19,8 @@
                             <group>
 
                                 <group string="Citizenship &amp; Other Info">
-                                    <field name="country_id" attrs="{'required':[('is_hr','=',False)]}"/>
+                                    <field name="country_id"
+                                           <!--attrs="{'required':[('is_hr','=',False)]}"/-->
                                            <!--required="True"/-->
                                     <field name="identification_id"
                                            required="True"/>
