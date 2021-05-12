@@ -1,0 +1,2213 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* job_portal
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-06-25 23:04+0000\n"
+"PO-Revision-Date: 2020-06-25 18:42-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es\n"
+"X-Generator: Poedit 2.3\n"
+
+#. module: job_portal
+#: model:ir.model.fields,field_description:job_portal.field_hr_employee__experience_ids
+#: model:ir.model.fields,field_description:job_portal.field_res_partner__experience_ids
+#: model:ir.model.fields,field_description:job_portal.field_res_users__experience_ids
+msgid " Professional Experiences"
+msgstr " Experiencias profesionales"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.crm_case_form_view_job_inheirt
+#: model_terms:ir.ui.view,arch_db:job_portal.hr_view_employee_form_inherit_familyinfo
+#: model_terms:ir.ui.view,arch_db:job_portal.view_partner_form
+msgid "# Certificate"
+msgstr "# Certificado"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.crm_case_form_view_job_inheirt
+#: model_terms:ir.ui.view,arch_db:job_portal.hr_view_employee_form_inherit_familyinfo
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_certification_details
+#: model_terms:ir.ui.view,arch_db:job_portal.view_partner_form
+msgid "# Certification"
+msgstr "# Certificación"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_academic_details
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_certification_details
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_experience_details
+msgid "&amp;times;"
+msgstr "&amp;times;"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.apply
+msgid "--Select--"
+msgstr "--Seleccionar--"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+msgid ""
+"1\n"
+"                                                                                                                                    Month"
+msgstr ""
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_experience_details
+msgid ""
+"1\n"
+"                                                        Month"
+msgstr ""
+
+#. module: job_portal
+#: model:ir.model.fields.selection,name:job_portal.selection__hr_experience__notice_period__1month
+msgid "1 Month"
+msgstr "1 Mes"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+msgid "1111"
+msgstr "1111"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+msgid ""
+"15\n"
+"                                                                                                                                    Days\n"
+"                                                                                                                                    or\n"
+"                                                                                                                                    less"
+msgstr ""
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_experience_details
+msgid ""
+"15\n"
+"                                                        Days or less"
+msgstr ""
+
+#. module: job_portal
+#: model:ir.model.fields.selection,name:job_portal.selection__hr_experience__notice_period__15days
+msgid "15 Days or less"
+msgstr ""
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+msgid ""
+"2\n"
+"                                                                                                                                    Months"
+msgstr ""
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_experience_details
+msgid ""
+"2\n"
+"                                                        Months"
+msgstr ""
+
+#. module: job_portal
+#: model:ir.model.fields.selection,name:job_portal.selection__hr_experience__notice_period__2months
+msgid "2 Months"
+msgstr "2 meses"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+msgid ""
+"3\n"
+"                                                                                                                                    Months"
+msgstr ""
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_experience_details
+msgid ""
+"3\n"
+"                                                        Months"
+msgstr ""
+
+#. module: job_portal
+#: model:ir.model.fields.selection,name:job_portal.selection__hr_experience__notice_period__3months
+msgid "3 Months"
+msgstr "3 Meses"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.update_sorry_ir_ui_view
+#: model_terms:website.page,arch_db:job_portal.update_sorry
+msgid "<br/><i class=\"fa fa-phone\" role=\"img\" aria-label=\"Phone\" title=\"Phone\"/>"
+msgstr ""
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+msgid ""
+"<i class=\"fa fa-asterisk color_red\" aria-hidden=\"true\"/>\n"
+"                                                                                                                                Description"
+msgstr ""
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+msgid ""
+"<i class=\"fa fa-asterisk color_red\" aria-hidden=\"true\"/>\n"
+"                                                                                                                                Institution"
+msgstr ""
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+msgid ""
+"<i class=\"fa fa-asterisk color_red\" aria-hidden=\"true\"/>\n"
+"                                                                                                                                Job\n"
+"                                                                                                                                Position"
+msgstr ""
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+msgid ""
+"<i class=\"fa fa-asterisk color_red\" aria-hidden=\"true\"/>\n"
+"                                                                                                                                Job\n"
+"                                                                                                                                Type"
+msgstr ""
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+msgid ""
+"<i class=\"fa fa-asterisk color_red\" aria-hidden=\"true\"/>\n"
+"                                                                                                                                Location"
+msgstr ""
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+msgid ""
+"<i class=\"fa fa-asterisk color_red\" aria-hidden=\"true\"/>\n"
+"                                                                                                                                Notice\n"
+"                                                                                                                                Period"
+msgstr ""
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+msgid ""
+"<i class=\"fa fa-asterisk color_red\" aria-hidden=\"true\"/>\n"
+"                                                                                                                                Reference\n"
+"                                                                                                                                Contact"
+msgstr ""
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+msgid ""
+"<i class=\"fa fa-asterisk color_red\" aria-hidden=\"true\"/>\n"
+"                                                                                                                                Reference\n"
+"                                                                                                                                Name"
+msgstr ""
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+msgid ""
+"<i class=\"fa fa-asterisk color_red\" aria-hidden=\"true\"/>\n"
+"                                                                                                                                Reference\n"
+"                                                                                                                                Position:"
+msgstr ""
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+msgid ""
+"<i class=\"fa fa-asterisk color_red\" aria-hidden=\"true\"/>\n"
+"                                                                                                                            Certification"
+msgstr ""
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+msgid ""
+"<i class=\"fa fa-asterisk color_red\" aria-hidden=\"true\"/>\n"
+"                                                                                                                            Description"
+msgstr ""
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+msgid ""
+"<i class=\"fa fa-asterisk color_red\" aria-hidden=\"true\"/>\n"
+"                                                                                                                            Institution"
+msgstr ""
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+msgid ""
+"<i class=\"fa fa-asterisk color_red\" aria-hidden=\"true\"/>\n"
+"                                                                                                                            Location"
+msgstr ""
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+msgid ""
+"<i class=\"fa fa-asterisk color_red\" aria-hidden=\"true\"/>\n"
+"                                                                                                                            Qualification:"
+msgstr ""
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_experience_details
+msgid ""
+"<i class=\"fa fa-asterisk color_red\" aria-hidden=\"true\"/>\n"
+"                                                    Contact"
+msgstr ""
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_experience_details
+msgid ""
+"<i class=\"fa fa-asterisk color_red\" aria-hidden=\"true\"/>\n"
+"                                                    Description"
+msgstr ""
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_academic_details
+msgid ""
+"<i class=\"fa fa-asterisk color_red\" aria-hidden=\"true\"/>\n"
+"                                                    Field of study"
+msgstr ""
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_experience_details
+msgid ""
+"<i class=\"fa fa-asterisk color_red\" aria-hidden=\"true\"/>\n"
+"                                                    Job Position"
+msgstr ""
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_experience_details
+msgid ""
+"<i class=\"fa fa-asterisk color_red\" aria-hidden=\"true\"/>\n"
+"                                                    Notice Period"
+msgstr ""
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_academic_details
+msgid ""
+"<i class=\"fa fa-asterisk color_red\" aria-hidden=\"true\"/>\n"
+"                                                    Qualification"
+msgstr ""
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_experience_details
+msgid ""
+"<i class=\"fa fa-asterisk color_red\" aria-hidden=\"true\"/>\n"
+"                                                    Reference Name"
+msgstr ""
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_experience_details
+msgid ""
+"<i class=\"fa fa-asterisk color_red\" aria-hidden=\"true\"/>\n"
+"                                                    Reference Position"
+msgstr ""
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_experience_details
+msgid ""
+"<i class=\"fa fa-asterisk color_red\" aria-hidden=\"true\"/>\n"
+"                                                    Type"
+msgstr ""
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_certification_details
+msgid ""
+"<i class=\"fa fa-asterisk color_red\" aria-hidden=\"true\"/>\n"
+"                                                Certification"
+msgstr ""
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_certification_details
+msgid ""
+"<i class=\"fa fa-asterisk color_red\" aria-hidden=\"true\"/>\n"
+"                                                Description"
+msgstr ""
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.apply
+msgid ""
+"<i class=\"fa fa-asterisk color_red\" aria-hidden=\"true\"/>\n"
+"                                        Address Line 1"
+msgstr ""
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.apply
+msgid ""
+"<i class=\"fa fa-asterisk color_red\" aria-hidden=\"true\"/>\n"
+"                                        Birthdate"
+msgstr ""
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.apply
+msgid ""
+"<i class=\"fa fa-asterisk color_red\" aria-hidden=\"true\"/>\n"
+"                                        City / Town:"
+msgstr ""
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.apply
+msgid ""
+"<i class=\"fa fa-asterisk color_red\" aria-hidden=\"true\"/>\n"
+"                                        Country"
+msgstr ""
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.apply
+msgid ""
+"<i class=\"fa fa-asterisk color_red\" aria-hidden=\"true\"/>\n"
+"                                        Email Address"
+msgstr ""
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.apply
+msgid ""
+"<i class=\"fa fa-asterisk color_red\" aria-hidden=\"true\"/>\n"
+"                                        First Name"
+msgstr ""
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.apply
+msgid ""
+"<i class=\"fa fa-asterisk color_red\" aria-hidden=\"true\"/>\n"
+"                                        Gender:"
+msgstr ""
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.apply
+msgid ""
+"<i class=\"fa fa-asterisk color_red\" aria-hidden=\"true\"/>\n"
+"                                        Last Name"
+msgstr ""
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.apply
+msgid ""
+"<i class=\"fa fa-asterisk color_red\" aria-hidden=\"true\"/>\n"
+"                                        Marital status"
+msgstr ""
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.apply
+msgid ""
+"<i class=\"fa fa-asterisk color_red\" aria-hidden=\"true\"/>\n"
+"                                        Middle Name"
+msgstr ""
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.apply
+msgid ""
+"<i class=\"fa fa-asterisk color_red\" aria-hidden=\"true\"/>\n"
+"                                        Mobile"
+msgstr ""
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.apply
+msgid ""
+"<i class=\"fa fa-asterisk color_red\" aria-hidden=\"true\"/>\n"
+"                                        Phone"
+msgstr ""
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.apply
+msgid ""
+"<i class=\"fa fa-asterisk color_red\" aria-hidden=\"true\"/>\n"
+"                                        Zip / Postal Code"
+msgstr ""
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_common_fields_details
+msgid ""
+"<i class=\"fa fa-asterisk color_red\" aria-hidden=\"true\"/>\n"
+"                Institution"
+msgstr ""
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_common_fields_details
+msgid ""
+"<i class=\"fa fa-asterisk color_red\" aria-hidden=\"true\"/>\n"
+"                Location"
+msgstr ""
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.update_sorry_ir_ui_view
+#: model_terms:website.page,arch_db:job_portal.update_sorry
+msgid "<i class=\"fa fa-envelope\" role=\"img\" aria-label=\"Email\" title=\"Email\"/>"
+msgstr ""
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.add_job_details
+msgid ""
+"<span class=\"btn btn-primary mt16 mb16\" id=\"add_job_location\">Add\n"
+"                                                        Location\n"
+"                                                    </span>"
+msgstr ""
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.add_job_details
+msgid ""
+"<span class=\"mt16 mb16 btn btn-primary\" id=\"add_benefits\">Add\n"
+"                                                        Benefits\n"
+"                                                    </span>"
+msgstr ""
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.add_job_details
+msgid ""
+"<span class=\"mt16 mb16 btn btn-primary\" id=\"add_job_requirements\">\n"
+"                                                        Add\n"
+"                                                        Requirement\n"
+"                                                    </span>"
+msgstr ""
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.update_sorry_ir_ui_view
+#: model_terms:website.page,arch_db:job_portal.update_sorry
+msgid ""
+"<span>\n"
+"                                                    We usually reply between one and three days.<br/>\n"
+"                                                    Feel free to contact him/her if you have further questions.\n"
+"                                                </span>"
+msgstr ""
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+msgid ""
+"<span>1 Month\n"
+"                                                                                            </span>"
+msgstr ""
+"<span>1 mes\n"
+"                                                                                            </span>"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.apply
+msgid "<span>1 Month</span>"
+msgstr "<span>1 mes</span>"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+msgid ""
+"<span>15 Days or\n"
+"                                                                                                less\n"
+"                                                                                            </span>"
+msgstr ""
+"<span>15 días o\n"
+"                                                                                                menos\n"
+"                                                                                            </span>"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.apply
+msgid "<span>15 Days or less</span>"
+msgstr "<span>15 días o menos</span>"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+msgid ""
+"<span>2 Month\n"
+"                                                                                            </span>"
+msgstr ""
+"<span>2 meses\n"
+"                                                                                            </span>"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.apply
+msgid "<span>2 Month</span>"
+msgstr "<span>2 meses</span>"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+msgid ""
+"<span>3 Month\n"
+"                                                                                            </span>"
+msgstr ""
+"<span>3 meses\n"
+"                                                                                            </span>"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.apply
+msgid "<span>3 Month</span>"
+msgstr "<span>3 meses</span>"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+msgid ""
+"<span>Full Time\n"
+"                                                                                            </span>"
+msgstr ""
+"<span>A tiempo completo\n"
+"                                                                                            </span>"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.apply
+msgid "<span>Full Time</span>"
+msgstr "<span>A tiempo completo</span>"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+msgid ""
+"<span>More than 3\n"
+"                                                                                                Months\n"
+"                                                                                            </span>"
+msgstr ""
+"<span>Más de 3\n"
+"                                                                                                Meses\n"
+"                                                                                            </span>"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.apply
+msgid "<span>More than 3 Months</span>"
+msgstr "<span>Más de 3 meses</span>"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+msgid ""
+"<span>Part Time\n"
+"                                                                                            </span>"
+msgstr ""
+"<span>A tiempo parcial\n"
+"                                                                                            </span>"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.apply
+msgid "<span>Part Time</span>"
+msgstr "<span>A tiempo parcial</span>"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+msgid ""
+"<span>Serving\n"
+"                                                                                                Notice Period\n"
+"                                                                                            </span>"
+msgstr ""
+"<span>Sirviendo a\n"
+"                                                                                                Periodo de aviso\n"
+"                                                                                            </span>"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.apply
+msgid ""
+"<span>Serving Notice Period\n"
+"                                                    </span>"
+msgstr ""
+"<span>Período de notificación\n"
+"                                                    </span>"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.crm_case_form_view_job_inheirt
+#: model_terms:ir.ui.view,arch_db:job_portal.hr_view_employee_form_inherit_familyinfo
+#: model_terms:ir.ui.view,arch_db:job_portal.view_partner_form
+msgid "Academic Experience"
+msgstr "Experiencia académica"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.apply
+#: model_terms:ir.ui.view,arch_db:job_portal.crm_case_form_view_job_inheirt
+#: model_terms:ir.ui.view,arch_db:job_portal.hr_view_employee_form_inherit_familyinfo
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+#: model_terms:ir.ui.view,arch_db:job_portal.view_partner_form
+msgid "Academic Experiences"
+msgstr "Experiencias académicas"
+
+#. module: job_portal
+#: model:ir.model.fields,field_description:job_portal.field_hr_applicant__academic_ids
+#: model:ir.model.fields,field_description:job_portal.field_hr_employee__academic_ids
+#: model:ir.model.fields,field_description:job_portal.field_res_partner__academic_ids
+#: model:ir.model.fields,field_description:job_portal.field_res_users__academic_ids
+#: model:ir.model.fields,help:job_portal.field_hr_applicant__academic_ids
+#: model:ir.model.fields,help:job_portal.field_hr_employee__academic_ids
+#: model:ir.model.fields,help:job_portal.field_res_partner__academic_ids
+#: model:ir.model.fields,help:job_portal.field_res_users__academic_ids
+msgid "Academic experiences"
+msgstr "Experiencias académicas"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.crm_case_form_view_job_inheirt
+#: model_terms:ir.ui.view,arch_db:job_portal.hr_view_employee_form_inherit_familyinfo
+#: model_terms:ir.ui.view,arch_db:job_portal.view_partner_form
+msgid "Activities"
+msgstr "Actividades"
+
+#. module: job_portal
+#: model:ir.model.fields,field_description:job_portal.field_hr_academic__activities
+msgid "Activities and associations"
+msgstr "Actividades y asociaciones"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_academic_details
+msgid ""
+"Add Academic\n"
+"                            Details"
+msgstr ""
+"Añade lo académico\n"
+"                            Detalles"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_certification_details
+msgid ""
+"Add Certification\n"
+"                            Details"
+msgstr ""
+"Agregar certificación\n"
+"                            Detalles"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_experience_details
+msgid ""
+"Add Experience\n"
+"                            Details"
+msgstr ""
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.apply
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+msgid "Add More"
+msgstr "Añadir más"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.crm_case_form_view_job_inheirt
+msgid "Address"
+msgstr "Dirección"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.apply
+msgid "Address Line 2"
+msgstr "Dirección línea 2"
+
+#. module: job_portal
+#. openerp-web
+#: code:addons/job_portal/static/src/js/main.js:0
+#, python-format
+msgid "Alert"
+msgstr "Alerta"
+
+#. module: job_portal
+#. openerp-web
+#: code:addons/job_portal/static/src/js/main.js:0
+#, python-format
+msgid "Alert!"
+msgstr "¡Alerta!"
+
+#. module: job_portal
+#: model:ir.model,name:job_portal.model_hr_applicant
+msgid "Applicant"
+msgstr "Candidato"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.apply
+msgid "Applicant Information"
+msgstr "Información del Solicitante"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_apply_template
+msgid "Applicants"
+msgstr "Candidatos"
+
+#. module: job_portal
+#: model:ir.model.fields,field_description:job_portal.field_hr_academic__applicant_id
+#: model:ir.model.fields,field_description:job_portal.field_hr_certification__applicant_id
+#: model:ir.model.fields,field_description:job_portal.field_hr_curriculum__applicant_id
+#: model:ir.model.fields,field_description:job_portal.field_hr_experience__applicant_id
+msgid "Application"
+msgstr "Solicitud"
+
+#. module: job_portal
+#: model:ir.model.fields,field_description:job_portal.field_hr_job__notify_email
+#: model_terms:ir.ui.view,arch_db:job_portal.post_resume
+msgid "Application Notify Email"
+msgstr "Correo para notificaciones"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_apply_template
+msgid ""
+"Apply\n"
+"                                        Now!"
+msgstr ""
+"Aplique\n"
+"                                        ¡Ahora!"
+
+#. module: job_portal
+#: model:ir.model.fields,field_description:job_portal.field_hr_job_benefits__name
+msgid "Benefit"
+msgstr "Beneficio"
+
+#. module: job_portal
+#: model:ir.model.fields,field_description:job_portal.field_hr_job__benefits_ids
+#: model_terms:ir.ui.view,arch_db:job_portal.add_job_details
+msgid "Benefits"
+msgstr "Ventajas"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.crm_case_form_view_job_inheirt
+msgid "Birth"
+msgstr "Nacimiento"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.apply
+#: model_terms:ir.ui.view,arch_db:job_portal.crm_case_form_view_job_inheirt
+#: model_terms:ir.ui.view,arch_db:job_portal.hr_view_employee_form_inherit_familyinfo
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+#: model_terms:ir.ui.view,arch_db:job_portal.view_partner_form
+msgid "Certification"
+msgstr "Certificación"
+
+#. module: job_portal
+#: model:ir.model.fields,field_description:job_portal.field_hr_certification__certification
+#: model:ir.model.fields,help:job_portal.field_hr_certification__certification
+msgid "Certification Number"
+msgstr "Número de certificado"
+
+#. module: job_portal
+#: model:ir.model.fields,field_description:job_portal.field_hr_applicant__certification_ids
+#: model:ir.model.fields,field_description:job_portal.field_hr_employee__certification_ids
+#: model:ir.model.fields,field_description:job_portal.field_res_partner__certification_ids
+#: model:ir.model.fields,field_description:job_portal.field_res_users__certification_ids
+#: model:ir.model.fields,help:job_portal.field_hr_applicant__certification_ids
+#: model:ir.model.fields,help:job_portal.field_hr_employee__certification_ids
+#: model:ir.model.fields,help:job_portal.field_res_partner__certification_ids
+#: model:ir.model.fields,help:job_portal.field_res_users__certification_ids
+#: model_terms:ir.ui.view,arch_db:job_portal.apply
+#: model_terms:ir.ui.view,arch_db:job_portal.crm_case_form_view_job_inheirt
+#: model_terms:ir.ui.view,arch_db:job_portal.hr_view_employee_form_inherit_familyinfo
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+#: model_terms:ir.ui.view,arch_db:job_portal.view_partner_form
+msgid "Certifications"
+msgstr "Certificaciones"
+
+#. module: job_portal
+#: model:ir.model.fields,field_description:job_portal.field_hr_employee__fam_children_ids
+#: model_terms:ir.ui.view,arch_db:job_portal.hr_view_employee_form_inherit_familyinfo
+msgid "Children"
+msgstr "Niños"
+
+#. module: job_portal
+#: model:ir.model,name:job_portal.model_hr_employee_children
+msgid "Children's"
+msgstr "Los niños"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.crm_case_form_view_job_inheirt
+msgid "Citizenship & Other Info"
+msgstr "Ciudadanía y otra información"
+
+#. module: job_portal
+#: model:ir.model.fields,field_description:job_portal.field_hr_applicant__city_ht
+#: model:ir.model.fields,field_description:job_portal.field_hr_employee__city_ht
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+msgid "City"
+msgstr "Ciudad"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.apply
+msgid "City Of Birth"
+msgstr "Ciudad de nacimiento"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_academic_details
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_certification_details
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_experience_details
+msgid "Close"
+msgstr "Cerrar"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.post_resume
+msgid ""
+"Closing\n"
+"                                                                    Date"
+msgstr ""
+"Cierre\n"
+"                                                                    Fecha"
+
+#. module: job_portal
+#: model:ir.model.fields,field_description:job_portal.field_hr_job__closing_date
+msgid "Closing Date"
+msgstr "Fecha de Cierre"
+
+#. module: job_portal
+#: model:ir.model,name:job_portal.model_res_company
+msgid "Companies"
+msgstr "Compañías"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+msgid "Company Name"
+msgstr "Nombre de la empresa"
+
+#. module: job_portal
+#: model:hr.recruitment.source,name:job_portal.source_website_company
+#: model:utm.source,name:job_portal.source_website_company_utm_source
+msgid "Company Website"
+msgstr "Sitio web de la empresa"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+msgid ""
+"Confirm\n"
+"                                                                                                                Change"
+msgstr "Confirme"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+msgid ""
+"Confirm\n"
+"                                                                                                            Change"
+msgstr "Confirme"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+msgid ""
+"Confirm\n"
+"                                <span class=\"fa fa-long-arrow-right\"/>"
+msgstr ""
+"Confirmar\n"
+"                                <span class=\"fa fa-long-arrow-right\"/>"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.scroll_top_btn
+msgid "Connect with us"
+msgstr "Conéctate con nosotros"
+
+#. module: job_portal
+#: model:ir.model,name:job_portal.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: job_portal
+#: model:ir.model.fields,field_description:job_portal.field_hr_applicant__ref_contact
+msgid "Contact Details"
+msgstr "Detalles de contacto"
+
+#. module: job_portal
+#: model:ir.model.fields,field_description:job_portal.field_hr_employee__ref_contact
+#: model:ir.model.fields,field_description:job_portal.field_hr_experience__referee_contact
+msgid "Contact details"
+msgstr "Detalles de contacto"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.scroll_top_btn
+msgid "Contact us"
+msgstr "Contáctenos"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_review_submit
+#: model_terms:ir.ui.view,arch_db:job_portal.update_sorry_ir_ui_view
+#: model_terms:website.page,arch_db:job_portal.update_sorry
+msgid "Continue To Our Website"
+msgstr "Continuar a nuestra página web"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.apply
+msgid ""
+"Correspondence/Local\n"
+"                                    Address"
+msgstr ""
+"Correspondencia/Local\n"
+"                                    Dirección"
+
+#. module: job_portal
+#: model:ir.model.fields,field_description:job_portal.field_hr_applicant__country_id
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+msgid "Country"
+msgstr "País"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.apply
+#: model_terms:ir.ui.view,arch_db:job_portal.crm_case_form_view_job_inheirt
+msgid "Country Of Birth"
+msgstr "País de naixement"
+
+#. module: job_portal
+#: model:ir.model.fields,field_description:job_portal.field_hr_applicant__country_of_birth_lt
+#: model:ir.model.fields,field_description:job_portal.field_hr_employee__country_of_birth_lt
+msgid "Country Of Birth Lt"
+msgstr "País de nacimiento "
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+msgid "Country..."
+msgstr "País..."
+
+#. module: job_portal
+#: model:ir.model.fields,field_description:job_portal.field_hr_academic__create_uid
+#: model:ir.model.fields,field_description:job_portal.field_hr_certification__create_uid
+#: model:ir.model.fields,field_description:job_portal.field_hr_curriculum__create_uid
+#: model:ir.model.fields,field_description:job_portal.field_hr_employee_children__create_uid
+#: model:ir.model.fields,field_description:job_portal.field_hr_experience__create_uid
+#: model:ir.model.fields,field_description:job_portal.field_hr_job_benefits__create_uid
+#: model:ir.model.fields,field_description:job_portal.field_hr_job_location__create_uid
+#: model:ir.model.fields,field_description:job_portal.field_hr_job_requirement__create_uid
+#: model:ir.model.fields,field_description:job_portal.field_hr_job_type__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: job_portal
+#: model:ir.model.fields,field_description:job_portal.field_hr_academic__create_date
+#: model:ir.model.fields,field_description:job_portal.field_hr_certification__create_date
+#: model:ir.model.fields,field_description:job_portal.field_hr_curriculum__create_date
+#: model:ir.model.fields,field_description:job_portal.field_hr_employee_children__create_date
+#: model:ir.model.fields,field_description:job_portal.field_hr_experience__create_date
+#: model:ir.model.fields,field_description:job_portal.field_hr_job_benefits__create_date
+#: model:ir.model.fields,field_description:job_portal.field_hr_job_location__create_date
+#: model:ir.model.fields,field_description:job_portal.field_hr_job_requirement__create_date
+#: model:ir.model.fields,field_description:job_portal.field_hr_job_type__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: job_portal
+#: model:ir.model.fields,field_description:job_portal.field_hr_applicant__birthday
+#: model:ir.model.fields,field_description:job_portal.field_hr_employee__fam_father_date_of_birth
+#: model:ir.model.fields,field_description:job_portal.field_hr_employee__fam_mother_date_of_birth
+#: model:ir.model.fields,field_description:job_portal.field_hr_employee_children__date_of_birth
+msgid "Date of Birth"
+msgstr "Fecha de nacimiento"
+
+#. module: job_portal
+#: model:ir.model.fields,help:job_portal.field_hr_applicant__experience_ids
+msgid "Define Professional Experiences"
+msgstr "Definir las experiencias profesionales"
+
+#. module: job_portal
+#: model:ir.model.fields,help:job_portal.field_hr_experience__type
+msgid "Define Work Type"
+msgstr "Definir el tipo de trabajo"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.post_resume
+msgid ""
+"Describe\n"
+"                                                your\n"
+"                                                Vacancy #1"
+msgstr "Describa tu"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.add_job_details
+msgid ""
+"Describe\n"
+"                                            your\n"
+"                                            Vacancy #1"
+msgstr "Describa tu"
+
+#. module: job_portal
+#: model:ir.model.fields,field_description:job_portal.field_hr_academic__description
+#: model:ir.model.fields,field_description:job_portal.field_hr_certification__description
+#: model:ir.model.fields,field_description:job_portal.field_hr_curriculum__description
+#: model:ir.model.fields,field_description:job_portal.field_hr_experience__description
+#: model_terms:ir.ui.view,arch_db:job_portal.apply
+#: model_terms:ir.ui.view,arch_db:job_portal.crm_case_form_view_job_inheirt
+#: model_terms:ir.ui.view,arch_db:job_portal.hr_view_employee_form_inherit_familyinfo
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+#: model_terms:ir.ui.view,arch_db:job_portal.view_partner_form
+msgid "Description"
+msgstr "Descripción"
+
+#. module: job_portal
+#: model:ir.model.fields,field_description:job_portal.field_hr_academic__display_name
+#: model:ir.model.fields,field_description:job_portal.field_hr_certification__display_name
+#: model:ir.model.fields,field_description:job_portal.field_hr_curriculum__display_name
+#: model:ir.model.fields,field_description:job_portal.field_hr_employee_children__display_name
+#: model:ir.model.fields,field_description:job_portal.field_hr_experience__display_name
+#: model:ir.model.fields,field_description:job_portal.field_hr_job_benefits__display_name
+#: model:ir.model.fields,field_description:job_portal.field_hr_job_location__display_name
+#: model:ir.model.fields,field_description:job_portal.field_hr_job_requirement__display_name
+#: model:ir.model.fields,field_description:job_portal.field_hr_job_type__display_name
+msgid "Display Name"
+msgstr "Nombre a mostrar"
+
+#. module: job_portal
+#: model:ir.model.fields.selection,name:job_portal.selection__hr_applicant__marital__divorced
+#: model_terms:ir.ui.view,arch_db:job_portal.apply
+msgid "Divorced"
+msgstr "Divorciado"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.apply
+msgid "Door/Flat No/ Building/Society"
+msgstr "Puerta/Piso No/ Edificio/Conjunto"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.apply
+msgid "Educational information"
+msgstr "Información educativa"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+msgid "Email"
+msgstr "Correo electrónico"
+
+#. module: job_portal
+#: model:ir.model,name:job_portal.model_hr_employee
+#: model:ir.model.fields,field_description:job_portal.field_hr_academic__employee_id
+#: model:ir.model.fields,field_description:job_portal.field_hr_certification__employee_id
+#: model:ir.model.fields,field_description:job_portal.field_hr_curriculum__employee_id
+#: model:ir.model.fields,field_description:job_portal.field_hr_employee_children__employee_id
+#: model:ir.model.fields,field_description:job_portal.field_hr_experience__employee_id
+msgid "Employee"
+msgstr "Repartidor"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.hr_employee_children_view_tree
+msgid "Employee Children"
+msgstr "Número de hijos"
+
+#. module: job_portal
+#: model:ir.model,name:job_portal.model_hr_curriculum
+msgid "Employee's Curriculum"
+msgstr "Currículo del empleado"
+
+#. module: job_portal
+#: model:ir.model.fields,field_description:job_portal.field_hr_employee__fam_spouse_employer
+#: model_terms:ir.ui.view,arch_db:job_portal.crm_case_form_view_job_inheirt
+#: model_terms:ir.ui.view,arch_db:job_portal.hr_view_employee_form_inherit_familyinfo
+#: model_terms:ir.ui.view,arch_db:job_portal.view_partner_form
+msgid "Employer"
+msgstr "Empleador"
+
+#. module: job_portal
+#: model:ir.model.fields,help:job_portal.field_hr_academic__organization
+#: model:ir.model.fields,help:job_portal.field_hr_certification__organization
+#: model:ir.model.fields,help:job_portal.field_hr_curriculum__organization
+#: model:ir.model.fields,help:job_portal.field_hr_experience__organization
+msgid "Employer, School, University, Organization, Institution, Company, Certification Authority"
+msgstr "Empleador, Escuela, Universidad, Organización, Institución, Empresa, Autoridad de Certificación"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+msgid ""
+"End\n"
+"                                                                                                                                Date"
+msgstr "Fecha fin"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+msgid ""
+"End\n"
+"                                                                                                                            Date"
+msgstr "Fecha fin"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.apply
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_common_fields_details
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+msgid "End Date"
+msgstr "Fecha finalización"
+
+#. module: job_portal
+#: model:ir.model.fields,field_description:job_portal.field_hr_academic__end_date
+#: model:ir.model.fields,field_description:job_portal.field_hr_certification__end_date
+#: model:ir.model.fields,field_description:job_portal.field_hr_curriculum__end_date
+#: model:ir.model.fields,field_description:job_portal.field_hr_experience__end_date
+msgid "End date"
+msgstr "Fecha de finalización"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.scroll_top_btn
+msgid "Facebook"
+msgstr "Facebook"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.hr_view_employee_form_inherit_familyinfo
+msgid "Family"
+msgstr "Familia"
+
+#. module: job_portal
+#: model:ir.model.fields,field_description:job_portal.field_hr_employee__fam_father
+msgid "Father's Name"
+msgstr "Nombre del Padre"
+
+#. module: job_portal
+#: model:ir.model.fields.selection,name:job_portal.selection__hr_applicant__gender__female
+#: model:ir.model.fields.selection,name:job_portal.selection__hr_employee_children__gender__female
+#: model_terms:ir.ui.view,arch_db:job_portal.apply
+msgid "Female"
+msgstr "Mujer"
+
+#. module: job_portal
+#: model:ir.model.fields,field_description:job_portal.field_hr_academic__study_field
+msgid "Field of study"
+msgstr "Campo de estudio"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.post_resume
+msgid ""
+"Fill the form below accurately\n"
+"                                                indicating your potentials and\n"
+"                                                suitability to\n"
+"                                                job applying for."
+msgstr ""
+"Rellene el siguiente formulario con precisión\n"
+"                                                indicando sus potenciales y\n"
+"                                                la idoneidad para\n"
+"                                                ...el trabajo que se solicita."
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.add_job_details
+msgid ""
+"Fill the form below accurately\n"
+"                                            indicating your potentials and\n"
+"                                            suitability to\n"
+"                                            job applying for."
+msgstr ""
+"Rellene el siguiente formulario con precisión\n"
+"                                            indicando sus potenciales y\n"
+"                                            la idoneidad para\n"
+"                                            ...el trabajo que se solicita."
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+msgid "First Name"
+msgstr "Nombre"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.crm_case_form_view_job_inheirt
+#: model_terms:ir.ui.view,arch_db:job_portal.hr_view_employee_form_inherit_familyinfo
+#: model_terms:ir.ui.view,arch_db:job_portal.view_partner_form
+msgid "For Verification"
+msgstr "Para la verificación"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+msgid ""
+"Full\n"
+"                                                                                                                                    Time"
+msgstr ""
+"Tiempo Completo\n"
+"                                                                                                                                    "
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_experience_details
+msgid "Full Time"
+msgstr "Tiempo completo"
+
+#. module: job_portal
+#: model:ir.model.fields.selection,name:job_portal.selection__hr_experience__type__full_time
+msgid "Full time"
+msgstr "Tiempo Completo"
+
+#. module: job_portal
+#: model:ir.model.fields,field_description:job_portal.field_hr_applicant__gender
+#: model:ir.model.fields,field_description:job_portal.field_hr_employee_children__gender
+msgid "Gender"
+msgstr "Sexo"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.scroll_top_btn
+msgid "Get In Touch"
+msgstr "Póngase en contacto"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.scroll_top_btn
+msgid "Github"
+msgstr "Github"
+
+#. module: job_portal
+#: model:ir.model.fields,field_description:job_portal.field_hr_academic__grade
+#: model:ir.model.fields,field_description:job_portal.field_hr_certification__grade
+#: model:ir.model.fields,field_description:job_portal.field_hr_curriculum__grade
+#: model:ir.model.fields,field_description:job_portal.field_hr_experience__grade
+#: model_terms:ir.ui.view,arch_db:job_portal.apply
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_academic_details
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_certification_details
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+msgid "Grade"
+msgstr "Calificación"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.scroll_top_btn
+msgid "Home"
+msgstr ""
+"<span class=\"fa fa-home\">\n"
+"\t\t\t\t\t\t\t\t\t\t\t&amp;nbsp;Visita la tienda</span>"
+
+
+#. module: job_portal
+#: model:ir.model.fields,field_description:job_portal.field_hr_academic__id
+#: model:ir.model.fields,field_description:job_portal.field_hr_certification__id
+#: model:ir.model.fields,field_description:job_portal.field_hr_curriculum__id
+#: model:ir.model.fields,field_description:job_portal.field_hr_employee_children__id
+#: model:ir.model.fields,field_description:job_portal.field_hr_experience__id
+#: model:ir.model.fields,field_description:job_portal.field_hr_job_benefits__id
+#: model:ir.model.fields,field_description:job_portal.field_hr_job_location__id
+#: model:ir.model.fields,field_description:job_portal.field_hr_job_requirement__id
+#: model:ir.model.fields,field_description:job_portal.field_hr_job_type__id
+msgid "ID"
+msgstr "Identidad"
+
+#. module: job_portal
+#: model:ir.model.fields,field_description:job_portal.field_hr_applicant__identification_id
+msgid "Identification No"
+msgstr "Nº identificación"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.update_sorry_ir_ui_view
+#: model_terms:website.page,arch_db:job_portal.update_sorry
+msgid "In the meantime,"
+msgstr "Mientras tanto,"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.scroll_top_btn
+msgid ""
+"Industry\n"
+"                                                Practices"
+msgstr ""
+"Practicas de la Industria\n"
+"                                                "
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.scroll_top_btn
+msgid "Instagram"
+msgstr "Instagram"
+
+#. module: job_portal
+#: model:ir.model.fields,field_description:job_portal.field_res_company__social_instagram
+#: model:ir.model.fields,field_description:job_portal.field_website__social_instagram
+msgid "Instagram Account"
+msgstr "Cuenta de Instagram"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.crm_case_form_view_job_inheirt
+#: model_terms:ir.ui.view,arch_db:job_portal.hr_view_employee_form_inherit_familyinfo
+#: model_terms:ir.ui.view,arch_db:job_portal.view_partner_form
+msgid "Institution"
+msgstr "Institución"
+
+#. module: job_portal
+#: model:ir.model.fields,field_description:job_portal.field_hr_academic__is_still
+#: model:ir.model.fields,field_description:job_portal.field_hr_certification__is_still
+#: model:ir.model.fields,field_description:job_portal.field_hr_curriculum__is_still
+#: model:ir.model.fields,field_description:job_portal.field_hr_experience__is_still
+msgid "Is Still"
+msgstr "Todavía está.."
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.crm_case_form_view_job_inheirt
+#: model_terms:ir.ui.view,arch_db:job_portal.hr_view_employee_form_inherit_familyinfo
+#: model_terms:ir.ui.view,arch_db:job_portal.view_partner_form
+msgid "Issued By"
+msgstr "Emitido por"
+
+#. module: job_portal
+#: model:ir.model.fields,field_description:job_portal.field_hr_job_benefits__job_benefits_id
+#: model:ir.model.fields,field_description:job_portal.field_hr_job_location__job_location_id
+#: model:ir.model.fields,field_description:job_portal.field_hr_job_requirement__job_requirement_id
+msgid "Job"
+msgstr "Puesto"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.post_resume
+msgid ""
+"Job\n"
+"                                                                    Requirements(Notes)"
+msgstr ""
+"Requisitos del Trabajo\n"
+"                                                                    "
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.add_job_details
+msgid ""
+"Job\n"
+"                                                    Location"
+msgstr ""
+"Ubicación del Trabajo\n"
+"                                                    "
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.add_job_details
+msgid ""
+"Job\n"
+"                                                    Requirements"
+msgstr ""
+"Requisitos del Trabajo\n"
+"                                                    "
+
+#. module: job_portal
+#. openerp-web
+#: code:addons/job_portal/static/src/js/main.js:0
+#, python-format
+msgid "Job Benefits Has been successfully added for this job posting !"
+msgstr "Beneficios de trabajo Se ha añadido con éxito para este anuncio de trabajo!"
+
+#. module: job_portal
+#. openerp-web
+#: code:addons/job_portal/static/src/js/main.js:0
+#, python-format
+msgid "Job Benefits could not be added. Please try again !"
+msgstr "No se pudieron añadir los beneficios del trabajo. Por favor, inténtelo de nuevo"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.post_resume
+msgid "Job Category"
+msgstr "Categoría"
+
+#. module: job_portal
+#. openerp-web
+#: code:addons/job_portal/static/src/js/main.js:0
+#, python-format
+msgid "Job Location Has been successfully added for this job posting !"
+msgstr "El lugar de trabajo ha sido añadido con éxito para este anuncio de empleo!"
+
+#. module: job_portal
+#. openerp-web
+#: code:addons/job_portal/static/src/js/main.js:0
+#, python-format
+msgid "Job Location could not be added. Please try again !"
+msgstr "La ubicación del trabajo no pudo ser añadida. ¡Por favor, inténtelo de nuevo!"
+
+#. module: job_portal
+#: model:ir.model,name:job_portal.model_hr_job
+msgid "Job Position"
+msgstr "Puesto de Trabajo"
+
+#. module: job_portal
+#. openerp-web
+#: code:addons/job_portal/static/src/js/main.js:0
+#, python-format
+msgid "Job Requirement Has been successfully added for this job posting !"
+msgstr "El requisito de trabajo ha sido añadido con éxito para este anuncio de empleo!"
+
+#. module: job_portal
+#. openerp-web
+#: code:addons/job_portal/static/src/js/main.js:0
+#, python-format
+msgid "Job Requirement could not be added. Please try again !"
+msgstr "No se pudo añadir el requisito del trabajo. ¡Por favor, inténtelo de nuevo!"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.post_resume
+msgid "Job Title"
+msgstr "Título del trabajo"
+
+#. module: job_portal
+#: model:ir.model.fields,field_description:job_portal.field_hr_job__job_type_id
+#: model:ir.model.fields,field_description:job_portal.field_hr_job_type__name
+msgid "Job Type"
+msgstr "Tipo de trabajo"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.crm_case_form_view_job_inheirt
+#: model_terms:ir.ui.view,arch_db:job_portal.hr_view_employee_form_inherit_familyinfo
+msgid "Job reference"
+msgstr "Referencia del trabajo"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_apply_template
+#: model_terms:ir.ui.view,arch_db:job_portal.scroll_top_btn
+msgid "Jobs"
+msgstr "Empleos"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.post_resume
+msgid ""
+"Jobs by Functional\n"
+"                                                                    area"
+msgstr ""
+"Trabajos por área de espcelizacion\n"
+"                                                                    "
+
+#. module: job_portal
+#: model:ir.model.fields,field_description:job_portal.field_hr_job__job_by_area
+msgid "Jobs by Functional Area"
+msgstr "Trabajos por área de espcelizacion"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+msgid ""
+"Last\n"
+"                                    Name"
+msgstr ""
+
+#. module: job_portal
+#: model:ir.model.fields,field_description:job_portal.field_hr_academic____last_update
+#: model:ir.model.fields,field_description:job_portal.field_hr_certification____last_update
+#: model:ir.model.fields,field_description:job_portal.field_hr_curriculum____last_update
+#: model:ir.model.fields,field_description:job_portal.field_hr_employee_children____last_update
+#: model:ir.model.fields,field_description:job_portal.field_hr_experience____last_update
+#: model:ir.model.fields,field_description:job_portal.field_hr_job_benefits____last_update
+#: model:ir.model.fields,field_description:job_portal.field_hr_job_location____last_update
+#: model:ir.model.fields,field_description:job_portal.field_hr_job_requirement____last_update
+#: model:ir.model.fields,field_description:job_portal.field_hr_job_type____last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: job_portal
+#: model:ir.model.fields,field_description:job_portal.field_hr_applicant__lastname
+#: model:ir.model.fields,field_description:job_portal.field_res_partner__lastname
+#: model:ir.model.fields,field_description:job_portal.field_res_users__lastname
+msgid "Last Name"
+msgstr "Apellido"
+
+#. module: job_portal
+#: model:ir.model.fields,field_description:job_portal.field_hr_academic__write_uid
+#: model:ir.model.fields,field_description:job_portal.field_hr_certification__write_uid
+#: model:ir.model.fields,field_description:job_portal.field_hr_curriculum__write_uid
+#: model:ir.model.fields,field_description:job_portal.field_hr_employee_children__write_uid
+#: model:ir.model.fields,field_description:job_portal.field_hr_experience__write_uid
+#: model:ir.model.fields,field_description:job_portal.field_hr_job_benefits__write_uid
+#: model:ir.model.fields,field_description:job_portal.field_hr_job_location__write_uid
+#: model:ir.model.fields,field_description:job_portal.field_hr_job_requirement__write_uid
+#: model:ir.model.fields,field_description:job_portal.field_hr_job_type__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: job_portal
+#: model:ir.model.fields,field_description:job_portal.field_hr_academic__write_date
+#: model:ir.model.fields,field_description:job_portal.field_hr_certification__write_date
+#: model:ir.model.fields,field_description:job_portal.field_hr_curriculum__write_date
+#: model:ir.model.fields,field_description:job_portal.field_hr_employee_children__write_date
+#: model:ir.model.fields,field_description:job_portal.field_hr_experience__write_date
+#: model:ir.model.fields,field_description:job_portal.field_hr_job_benefits__write_date
+#: model:ir.model.fields,field_description:job_portal.field_hr_job_location__write_date
+#: model:ir.model.fields,field_description:job_portal.field_hr_job_requirement__write_date
+#: model:ir.model.fields,field_description:job_portal.field_hr_job_type__write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.scroll_top_btn
+msgid "Linkedin"
+msgstr "Linkedin"
+
+#. module: job_portal
+#: model:ir.model.fields,field_description:job_portal.field_hr_academic__location
+#: model:ir.model.fields,field_description:job_portal.field_hr_certification__location
+#: model:ir.model.fields,field_description:job_portal.field_hr_curriculum__location
+#: model:ir.model.fields,field_description:job_portal.field_hr_experience__location
+#: model:ir.model.fields,field_description:job_portal.field_hr_job__location_ids
+#: model:ir.model.fields,field_description:job_portal.field_hr_job_location__name
+#: model:ir.model.fields,help:job_portal.field_hr_academic__location
+#: model:ir.model.fields,help:job_portal.field_hr_certification__location
+#: model:ir.model.fields,help:job_portal.field_hr_curriculum__location
+#: model:ir.model.fields,help:job_portal.field_hr_experience__location
+#: model_terms:ir.ui.view,arch_db:job_portal.apply
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+msgid "Location"
+msgstr "Ubicación"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.update_sorry_ir_ui_view
+#: model_terms:website.page,arch_db:job_portal.update_sorry
+msgid "Look around on our website:"
+msgstr "Mira en nuestra página web:"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+msgid ""
+"Lorem ipsum dolor sit amet,\n"
+"                                                                            consectetur adipisicing elit, sed\n"
+"                                                                            do eiusmod tempor incididunt ut\n"
+"                                                                            labore et dolore magna aliqua."
+msgstr ""
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.apply
+msgid ""
+"Lorem ipsum dolor sit amet, consectetur\n"
+"                                        adipisicing elit, sed do eiusmod tempor\n"
+"                                        incididunt ut labore et dolore magna aliqua."
+msgstr ""
+
+
+#. module: job_portal
+#: model:ir.model.fields.selection,name:job_portal.selection__hr_applicant__gender__male
+#: model:ir.model.fields.selection,name:job_portal.selection__hr_employee_children__gender__male
+#: model_terms:ir.ui.view,arch_db:job_portal.apply
+msgid "Male"
+msgstr "Hombre"
+
+#. module: job_portal
+#: model:ir.model.fields,field_description:job_portal.field_hr_applicant__marital
+msgid "Marital Status"
+msgstr "Estado civil"
+
+#. module: job_portal
+#: model:ir.model.fields.selection,name:job_portal.selection__hr_applicant__marital__married
+#: model_terms:ir.ui.view,arch_db:job_portal.apply
+msgid "Married"
+msgstr "Casado (a)"
+
+#. module: job_portal
+#: model:ir.model.fields,field_description:job_portal.field_hr_applicant__middlename
+#: model:ir.model.fields,field_description:job_portal.field_res_partner__middlename
+#: model:ir.model.fields,field_description:job_portal.field_res_users__middlename
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+msgid "Middle Name"
+msgstr "Segundo nombre"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+msgid ""
+"More\n"
+"                                                                                                                                    than\n"
+"                                                                                                                                    3\n"
+"                                                                                                                                    Months"
+msgstr ""
+"Más\n"
+"                                                                                                                                    que\n"
+"                                                                                                                                    3\n"
+"                                                                                                                                    Meses"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_experience_details
+msgid ""
+"More than 3\n"
+"                                                        Months"
+msgstr ""
+
+#. module: job_portal
+#: model:ir.model.fields.selection,name:job_portal.selection__hr_experience__notice_period__above3months
+msgid "More than 3 Months"
+msgstr "Más de 3 meses"
+
+#. module: job_portal
+#: model:ir.model.fields,field_description:job_portal.field_hr_employee__fam_mother
+msgid "Mother's Name"
+msgstr "Nombre de la Madre"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+msgid "My State / Province"
+msgstr "Mi Estado / Provincia"
+
+#. module: job_portal
+#: model:ir.model.fields,field_description:job_portal.field_hr_academic__name
+#: model:ir.model.fields,field_description:job_portal.field_hr_certification__name
+#: model:ir.model.fields,field_description:job_portal.field_hr_curriculum__name
+#: model:ir.model.fields,field_description:job_portal.field_hr_employee__fam_spouse
+#: model:ir.model.fields,field_description:job_portal.field_hr_employee__lastname
+#: model:ir.model.fields,field_description:job_portal.field_hr_employee__middlename
+#: model:ir.model.fields,field_description:job_portal.field_hr_employee_children__name
+#: model:ir.model.fields,field_description:job_portal.field_hr_experience__name
+#: model_terms:ir.ui.view,arch_db:job_portal.apply
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+msgid "Name"
+msgstr "Nombre"
+
+#. module: job_portal
+#: model:ir.model.fields,field_description:job_portal.field_hr_experience__referee_name
+msgid "Name of referee"
+msgstr "Nombre de la referencia"
+
+#. module: job_portal
+#: code:addons/job_portal/models/hr_applicant.py:0
+#, python-format
+msgid "New Employee %s Hired"
+msgstr "Nuevo empleado contratado: %s"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.post_resume
+msgid "Next"
+msgstr "Siguiente"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+msgid ""
+"Notice\n"
+"                                                                                        Period"
+msgstr "Periodo de aviso"
+
+#. module: job_portal
+#: model:ir.model.fields,field_description:job_portal.field_hr_experience__notice_period
+#: model_terms:ir.ui.view,arch_db:job_portal.apply
+msgid "Notice Period"
+msgstr "Período de preaviso"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.update_sorry_ir_ui_view
+#: model_terms:website.page,arch_db:job_portal.update_sorry
+msgid "Oops!"
+msgstr "¡Vaya!"
+
+#. module: job_portal
+#: model:ir.model.fields,field_description:job_portal.field_hr_employee__operation_type
+msgid "Operation Type"
+msgstr "Tipo de operación"
+
+#. module: job_portal
+#: model:ir.model.fields,field_description:job_portal.field_hr_employee__opr_id
+msgid "Opr"
+msgstr ""
+
+#. module: job_portal
+#: model:ir.model.fields,field_description:job_portal.field_hr_academic__organization
+#: model:ir.model.fields,field_description:job_portal.field_hr_applicant__ref_org
+#: model:ir.model.fields,field_description:job_portal.field_hr_certification__organization
+#: model:ir.model.fields,field_description:job_portal.field_hr_curriculum__organization
+#: model:ir.model.fields,field_description:job_portal.field_hr_employee__ref_org
+#: model:ir.model.fields,field_description:job_portal.field_hr_experience__organization
+#: model_terms:ir.ui.view,arch_db:job_portal.apply
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+msgid "Organization"
+msgstr "Organización"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.hr_view_employee_form_inherit_familyinfo
+msgid "Parents"
+msgstr "Padres"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+msgid ""
+"Part\n"
+"                                                                                                                                    Time"
+msgstr "Tiempo Parcial.  D"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_experience_details
+msgid "Part Time"
+msgstr "Tiempo Parcial"
+
+#. module: job_portal
+#: model:ir.model.fields.selection,name:job_portal.selection__hr_experience__type__part_time
+msgid "Part time"
+msgstr "Tiempo Parcial"
+
+#. module: job_portal
+#: model:ir.model.fields,field_description:job_portal.field_hr_academic__partner_id
+#: model:ir.model.fields,field_description:job_portal.field_hr_certification__partner_id
+#: model:ir.model.fields,field_description:job_portal.field_hr_curriculum__partner_id
+#: model:ir.model.fields,field_description:job_portal.field_hr_experience__partner_id
+msgid "Partner"
+msgstr "Socio"
+
+#. module: job_portal
+#: model:ir.model.fields,field_description:job_portal.field_hr_applicant__passport_id
+msgid "Passport No"
+msgstr "Nº Pasaporte"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.crm_case_form_view_job_inheirt
+msgid "Personal Info"
+msgstr "Información personal"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+msgid "Phone"
+msgstr "Teléfono"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.scroll_top_btn
+msgid "Pin -"
+msgstr "Código PIN"
+
+#. module: job_portal
+#: model:ir.model.fields,field_description:job_portal.field_hr_applicant__place_of_birth
+msgid "Place of Birth"
+msgstr "Lugar de nacimiento"
+
+#. module: job_portal
+#. openerp-web
+#: code:addons/job_portal/static/src/js/main.js:0
+#, python-format
+msgid "Please Give Proper Values to the Input fields !"
+msgstr "Por favor, dé los valores adecuados a los campos de entrada!"
+
+#. module: job_portal
+#. openerp-web
+#: code:addons/job_portal/static/src/js/main.js:0
+#, python-format
+msgid "Please add value in the Benefits input !"
+msgstr "Por favor, añada valor de Beneficios !"
+
+#. module: job_portal
+#. openerp-web
+#: code:addons/job_portal/static/src/js/main.js:0
+#, python-format
+msgid "Please add value in the Job Location Input !"
+msgstr "Por favor, agregue valor en la entrada de la ubicación del trabajo!"
+
+#. module: job_portal
+#. openerp-web
+#: code:addons/job_portal/static/src/js/main.js:0
+#, python-format
+msgid "Please add value in the Job Requirements Input !"
+msgstr "Por favor, añada valor en la entrada de los requisitos del trabajo!"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.apply
+msgid ""
+"Please send again your\n"
+"                        resume."
+msgstr ""
+"Por favor, envíe de nuevo su curriculo\n"
+"                        "
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.crm_case_form_view_job_inheirt
+#: model_terms:ir.ui.view,arch_db:job_portal.hr_view_employee_form_inherit_familyinfo
+#: model_terms:ir.ui.view,arch_db:job_portal.view_partner_form
+msgid "Position"
+msgstr "Posición"
+
+#. module: job_portal
+#: model:ir.model.fields,field_description:job_portal.field_hr_experience__referee_position
+msgid "Position of referee"
+msgstr "Cargo de la referencia"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.post_menu
+#: model_terms:ir.ui.view,arch_db:job_portal.scroll_top_btn
+msgid "Post Job"
+msgstr "Publicar un empleo"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.crm_case_form_view_job_inheirt
+#: model_terms:ir.ui.view,arch_db:job_portal.hr_view_employee_form_inherit_familyinfo
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_common_fields_details
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+#: model_terms:ir.ui.view,arch_db:job_portal.view_partner_form
+msgid "Present"
+msgstr "Presente"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+msgid "Present:"
+msgstr "Presente:"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.apply
+msgid ""
+"Previous Employment\n"
+"                                information"
+msgstr ""
+"Información del Empleo anterior\n"
+"                                "
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.crm_case_form_view_job_inheirt
+#: model_terms:ir.ui.view,arch_db:job_portal.hr_view_employee_form_inherit_familyinfo
+#: model_terms:ir.ui.view,arch_db:job_portal.view_partner_form
+msgid "Professional Experience"
+msgstr "Experiencia profesional"
+
+#. module: job_portal
+#: model:ir.model.fields,field_description:job_portal.field_hr_applicant__experience_ids
+#: model:ir.model.fields,help:job_portal.field_hr_employee__experience_ids
+#: model:ir.model.fields,help:job_portal.field_res_partner__experience_ids
+#: model:ir.model.fields,help:job_portal.field_res_users__experience_ids
+#: model_terms:ir.ui.view,arch_db:job_portal.apply
+#: model_terms:ir.ui.view,arch_db:job_portal.crm_case_form_view_job_inheirt
+#: model_terms:ir.ui.view,arch_db:job_portal.hr_view_employee_form_inherit_familyinfo
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+#: model_terms:ir.ui.view,arch_db:job_portal.view_partner_form
+msgid "Professional Experiences"
+msgstr "Experiencias profesionales"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.crm_case_form_view_job_inheirt
+#: model_terms:ir.ui.view,arch_db:job_portal.hr_view_employee_form_inherit_familyinfo
+#: model_terms:ir.ui.view,arch_db:job_portal.view_partner_form
+msgid "Qualification"
+msgstr "Calificacion"
+
+#. module: job_portal
+#: model:ir.model.fields,field_description:job_portal.field_res_company__social_rss
+#: model:ir.model.fields,field_description:job_portal.field_website__social_rss
+msgid "RSS Account"
+msgstr ""
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+msgid ""
+"Referee\n"
+"                                                                                        Contact"
+msgstr "Referencia"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+msgid ""
+"Referee\n"
+"                                                                                        Name"
+msgstr "Referencia"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+msgid ""
+"Referee\n"
+"                                                                                        Position"
+msgstr "Cargo de la referencia"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.apply
+msgid "Referee Contact"
+msgstr "Contacto de la referencia"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.apply
+msgid "Referee Name"
+msgstr "Nombre de la referencia"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.apply
+msgid "Referee Position"
+msgstr "Cargo de la referencia"
+
+#. module: job_portal
+#: model:ir.model.fields,field_description:job_portal.field_hr_applicant__ref_name
+#: model:ir.model.fields,field_description:job_portal.field_hr_employee__ref_name
+msgid "Referred by"
+msgstr "Referido por"
+
+#. module: job_portal
+#: model:ir.model.fields,field_description:job_portal.field_hr_applicant__ref_rel
+#: model:ir.model.fields,field_description:job_portal.field_hr_employee__ref_rel
+msgid "Relation"
+msgstr "Relación"
+
+#. module: job_portal
+#: model:ir.model.fields,field_description:job_portal.field_hr_job_requirement__name
+msgid "Requirement"
+msgstr "Requisito"
+
+#. module: job_portal
+#: model:ir.model.fields,field_description:job_portal.field_hr_job__job_requirement_ids
+msgid "Requirements"
+msgstr "Requerimientos"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.crm_case_form_view_job_inheirt
+msgid "Residential address"
+msgstr "Dirección residencial"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.apply
+msgid "Resume"
+msgstr "Reanudar"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.scroll_top_btn
+msgid "Rss"
+msgstr "Rss"
+
+#. module: job_portal
+#: model:ir.model.fields,field_description:job_portal.field_hr_applicant__is_same_address
+#: model:ir.model.fields,field_description:job_portal.field_hr_employee__is_same_address
+msgid "Same as Correspondence Address"
+msgstr "Igual que la dirección de correspondencia"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_academic_details
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_certification_details
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_experience_details
+msgid "Save"
+msgstr "Guardar"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+msgid ""
+"Sed ut perspiciatis unde omnis iste\n"
+"                                                                            natus error sit voluptatem\n"
+"                                                                            accusantium doloremque laudantium,\n"
+"                                                                            totam rem aperiam."
+msgstr ""
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.apply
+msgid ""
+"Sed ut perspiciatis unde omnis iste natus error\n"
+"                                        sit voluptatem accusantium doloremque\n"
+"                                        laudantium, totam rem aperiam."
+msgstr ""
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+msgid ""
+"Serving\n"
+"                                                                                                                                    Notice\n"
+"                                                                                                                                    Period"
+msgstr "Periodo de aviso"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_experience_details
+msgid ""
+"Serving\n"
+"                                                        Notice Period"
+msgstr ""
+
+#. module: job_portal
+#: model:ir.model.fields.selection,name:job_portal.selection__hr_experience__notice_period__s_notice_period
+msgid "Serving Notice Period"
+msgstr "Período de notificación"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_apply_template
+msgid ""
+"Sign\n"
+"                                        Up/Login"
+msgstr "Inicie sesión o regístrese"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_apply_template
+msgid "Sign Up/Login"
+msgstr "Registrarse/Iniciar sesión"
+
+#. module: job_portal
+#: model:ir.model.fields.selection,name:job_portal.selection__hr_applicant__marital__single
+#: model_terms:ir.ui.view,arch_db:job_portal.apply
+msgid "Single"
+msgstr "Soltero(a)"
+
+#. module: job_portal
+#: model:ir.model.fields,field_description:job_portal.field_res_company__social_skype
+#: model:ir.model.fields,field_description:job_portal.field_website__social_skype
+msgid "Skype Account"
+msgstr "Cuenta de Skype"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.hr_view_employee_form_inherit_familyinfo
+msgid "Spouse"
+msgstr "Cónyuge"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+msgid ""
+"Start\n"
+"                                                                                                                                Date"
+msgstr "<b>Fecha de inicio </b>"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+msgid ""
+"Start\n"
+"                                                                                                                            Date:"
+msgstr "<b>Fecha de inicio </b>"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+msgid ""
+"Start\n"
+"                                                                                        Date"
+msgstr "<b>Fecha de inicio </b>"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.apply
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_common_fields_details
+msgid "Start Date"
+msgstr "Fecha de inicio"
+
+#. module: job_portal
+#: model:ir.model.fields,field_description:job_portal.field_hr_academic__start_date
+#: model:ir.model.fields,field_description:job_portal.field_hr_certification__start_date
+#: model:ir.model.fields,field_description:job_portal.field_hr_curriculum__start_date
+#: model:ir.model.fields,field_description:job_portal.field_hr_experience__start_date
+msgid "Start date"
+msgstr "Fecha de inicio"
+
+#. module: job_portal
+#: model:ir.model.fields,field_description:job_portal.field_hr_applicant__state_id_ht
+#: model:ir.model.fields,field_description:job_portal.field_hr_employee__state_id_ht
+#: model_terms:ir.ui.view,arch_db:job_portal.apply
+msgid "State"
+msgstr "Estado"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.crm_case_form_view_job_inheirt
+msgid "Status"
+msgstr "Estado"
+
+#. module: job_portal
+#: model:ir.model.fields,field_description:job_portal.field_hr_applicant__street_ht
+#: model:ir.model.fields,field_description:job_portal.field_hr_employee__street_ht
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+msgid "Street"
+msgstr "Calle"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.apply
+msgid "Street/Road Name/ Block"
+msgstr "Calle/Nombre de la carretera/ Bloque"
+
+#. module: job_portal
+#: model:ir.model.fields,field_description:job_portal.field_hr_applicant__street2_ht
+#: model:ir.model.fields,field_description:job_portal.field_hr_employee__street2_ht
+msgid "Street2"
+msgstr "Calle2"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+msgid ""
+"Study\n"
+"                                                                                        Field"
+msgstr "Campo de estudio"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.apply
+msgid "Study Field"
+msgstr ""
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.add_job_details
+#: model_terms:ir.ui.view,arch_db:job_portal.apply
+msgid "Submit"
+msgstr "Enviar"
+
+#. module: job_portal
+#. openerp-web
+#: code:addons/job_portal/static/src/js/main.js:0
+#, python-format
+msgid "Success!"
+msgstr "Correcto!"
+
+#. module: job_portal
+#: model:ir.model.fields,field_description:job_portal.field_hr_employee__fam_spouse_tel
+msgid "Telephone."
+msgstr "Teléfono."
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_review_submit
+msgid "Thank you!"
+msgstr "¡Gracias!"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.scroll_top_btn
+msgid "Twitter"
+msgstr "Twitter"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.apply
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+msgid "Type"
+msgstr "Tipo"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.scroll_top_btn
+msgid "Useful links"
+msgstr "Enlaces útiles"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+msgid ""
+"Ut enim ad minim veniam, quis\n"
+"                                                                            nostrud exercitation ullamco\n"
+"                                                                            laboris nisi ut aliquip ex ea\n"
+"                                                                            commodo consequat."
+msgstr ""
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.apply
+msgid ""
+"Ut enim ad minim veniam, quis nostrud\n"
+"                                        exercitation ullamco laboris nisi ut aliquip ex\n"
+"                                        ea commodo consequat."
+msgstr ""
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+msgid "VAT Number"
+msgstr "Número de IVA"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.scroll_top_btn
+msgid "Vimeo"
+msgstr "Vimeo"
+
+#. module: job_portal
+#: model:ir.model.fields,field_description:job_portal.field_res_company__social_vimeo
+#: model:ir.model.fields,field_description:job_portal.field_website__social_vimeo
+msgid "Vimeo Account"
+msgstr "Cuenta Vimeo"
+
+#. module: job_portal
+#: model:ir.model,name:job_portal.model_website
+msgid "Website"
+msgstr "Sitio Web"
+
+#. module: job_portal
+#: model:ir.model.fields.selection,name:job_portal.selection__hr_applicant__marital__widower
+#: model_terms:ir.ui.view,arch_db:job_portal.apply
+msgid "Widower"
+msgstr "Viudo(a)"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.crm_case_form_view_job_inheirt
+#: model_terms:ir.ui.view,arch_db:job_portal.hr_view_employee_form_inherit_familyinfo
+#: model_terms:ir.ui.view,arch_db:job_portal.view_partner_form
+msgid "Work Type"
+msgstr "Tipos de Trabajo"
+
+#. module: job_portal
+#: model:ir.model.fields,field_description:job_portal.field_hr_experience__type
+msgid "Work type"
+msgstr "Tipo de tareas"
+
+#. module: job_portal
+#: code:addons/job_portal/models/hr_applicant.py:0
+#, python-format
+msgid "You must define an Applied Job and a Contact Name for this applicant."
+msgstr "Debe definir un trabajo solicitado y un nombre de contacto para este solicitante."
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.update_sorry_ir_ui_view
+#: model_terms:website.page,arch_db:job_portal.update_sorry
+msgid "Your application has been sent to:"
+msgstr "Su solicitud ha sido enviada a:"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.update_sorry_ir_ui_view
+#: model_terms:website.page,arch_db:job_portal.update_sorry
+msgid "Your application has been submited already.You can not edit the application after submition."
+msgstr "Su solicitud ya ha sido enviada. No puede editar la solicitud después de enviarla."
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_review_submit
+msgid "Your job post has been successfully registered,"
+msgstr "Su puesto de trabajo ha sido registrado con éxito,"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.scroll_top_btn
+msgid "Youtube"
+msgstr "Youtube"
+
+#. module: job_portal
+#: model:ir.model.fields,field_description:job_portal.field_hr_applicant__zip_ht
+#: model:ir.model.fields,field_description:job_portal.field_hr_employee__zip_ht
+msgid "Zip"
+msgstr "Código postal"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+msgid ""
+"Zip\n"
+"                                    / Postal Code"
+msgstr ""
+
+#. module: job_portal
+#: model:ir.model,name:job_portal.model_hr_academic
+msgid "hr.academic"
+msgstr ""
+
+#. module: job_portal
+#: model:ir.model,name:job_portal.model_hr_certification
+msgid "hr.certification"
+msgstr ""
+
+#. module: job_portal
+#: model:ir.model,name:job_portal.model_hr_experience
+msgid "hr.experience"
+msgstr ""
+
+#. module: job_portal
+#: model:ir.model,name:job_portal.model_hr_job_benefits
+msgid "hr.job.benefits"
+msgstr ""
+
+#. module: job_portal
+#: model:ir.model,name:job_portal.model_hr_job_location
+msgid "hr.job.location"
+msgstr ""
+
+#. module: job_portal
+#: model:ir.model,name:job_portal.model_hr_job_requirement
+msgid "hr.job.requirement"
+msgstr ""
+
+#. module: job_portal
+#: model:ir.model,name:job_portal.model_hr_job_type
+msgid "hr.job.type"
+msgstr ""
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.crm_case_form_view_job_inheirt
+#: model_terms:ir.ui.view,arch_db:job_portal.hr_view_employee_form_inherit_familyinfo
+msgid "reference"
+msgstr "referencia"
+
+#. module: job_portal
+#: model_terms:ir.ui.view,arch_db:job_portal.job_portal_my_details
+msgid "select..."
+msgstr "seleccionar…"
