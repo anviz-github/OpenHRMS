@@ -58,7 +58,7 @@ class HrApplicant(models.Model):
                                         help="Certifications")
     is_hr = fields.Boolean(compute="_check_user_group")
 
-    @api.one
+    
     def _check_user_group(self):
         self.is_hr = self.user.has_group('base.group_recruitment_administrator')
 
