@@ -56,7 +56,7 @@ class HrApplicant(models.Model):
     certification_ids = fields.One2many('hr.certification', 'applicant_id',
                                         'Certifications',
                                         help="Certifications")
-    is_hr =
+    #is_hr = 
 
     @api.constrains('salary_expected', 'salary_proposed', 'birthday')
     def validate_applicants(self):
