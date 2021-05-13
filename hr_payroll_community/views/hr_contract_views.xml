@@ -24,15 +24,15 @@
                     <field name="additional_wage_trial" nolabel="1"/>
                     <span>/ month</span>
                 </div>
+                <label for="performance_bonus_trial"/>
+                <div class="o_row" name="performance_bonus_trial">
+                    <field name="performance_bonus_trial" nolabel="1"/>
+                    <span>/ month</span>
                 <label for="additional_wage"/>
                 <div class="o_row" name="additional_wage">
                     <field name="additional_wage" nolabel="1"/>
                     <span>/ month</span>
                 </div>
-                <label for="performance_bonus_trial"/>
-                <div class="o_row" name="performance_bonus_trial">
-                    <field name="performance_bonus_trial" nolabel="1"/>
-                    <span>/ month</span>
                 </div>
                 <label for="performance_bonus"/>
                 <div class="o_row" name="performance_bonus">
@@ -98,18 +98,18 @@
                         <field name="sia" nolabel="1"/>
                         <span>/ month</span>
                     </div>
-                    <!--label for="da"/>
+                    <label for="house_allowance"/>
                     <div class="o_row">
-                        <field name="da" nolabel="1"/>
+                        <field name="house_allowance" nolabel="1"/>
                         <span>/ month</span>
                     </div>
-                    <label for="travel_allowance"/>
+                    <label for="attendance_award"/>
                     <div class="o_row">
 
-                        <field name="travel_allowance" nolabel="1"/>
+                        <field name="attendance_award" nolabel="1"/>
                         <span>/ month</span>
                     </div>
-                    <label for="meal_allowance"/>
+                    <!--label for="meal_allowance"/>
                     <div class="o_row">
 
                         <field name="meal_allowance" nolabel="1"/>

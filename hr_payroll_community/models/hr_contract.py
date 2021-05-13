@@ -39,6 +39,10 @@ class HrContract(models.Model):
                                       help="Employee's monthly performance bonus.")
     performance_bonus_trial = fields.Monetary('Performance Bonus Trial', required=False, tracking=True,
                                         help="Employee's monthly performance bonus trial.")
+
+    house_allowance = fields.Monetary(string="House Allowance", help="House allowances")
+    attendance_award = fields.Monetary(string="Attendance Award", help="Attendance award")
+
     def get_all_structures(self):
         """
         @return: the structures linked to the given contracts, ordered by hierachy (parent=False first,

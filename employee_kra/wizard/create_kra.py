@@ -23,7 +23,7 @@ class kra_wizard(models.TransientModel):
         EmpKraQueObj = self.env['employee.kra.question']
         KraObj = self.env['hr.kra']
         if self.all_employee:
-            employees = EmployeeObj.search([('job_id','!=', False), ('job_id.kra_id','!=', False)])
+            employees = EmployeeObj.search([('job_id','!=', False), ('job_id.kra_id', '!=', False)])
 
         else:
             employees = self.employee_ids
