@@ -17,6 +17,7 @@
                     <group>
                         <field name="employee_ids" attrs="{'invisible':[('all_employee','=',True)], 'required':[('all_employee','=',False)]}" widget="many2many_tags"/>
                         <field name="all_employee"/>
+                        <field name="company_id"/>
                     </group>
                 </group>
                 <footer>

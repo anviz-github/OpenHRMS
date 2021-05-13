@@ -12,6 +12,9 @@ class kra_wizard(models.TransientModel):
     quarterly = fields.Selection([('1', 'First Quarter'), ('2', 'Second Quarter'), ('3', 'Third Quarter'), ('4', 'Fourth Quarter')], "KRA Quarter")
     employee_ids = fields.Many2many('hr.employee', 'hr_employee_kra_wizard', 'emp_id', 'wiz_id', 'Employees')
     all_employee = fields.Boolean('All Employees')
+    company_id = fields.Many2one('res.company', string='Company', readonly=True, copy=False, help="Company",
+                                 default=lambda self: self.env['res.company']._company_default_get())
+
     
 
     def create_kra(self):
