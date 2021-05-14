@@ -42,6 +42,7 @@ class HrContract(models.Model):
 
     house_allowance = fields.Monetary(string="House Allowance", help="House allowances")
     attendance_award = fields.Monetary(string="Attendance Award", help="Attendance award")
+    seniority_allowance = fields.Monetary(string="Seniority Allowance", help="Seniority allowance")
 
     def get_all_structures(self):
         """

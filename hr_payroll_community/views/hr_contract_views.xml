@@ -100,13 +100,19 @@
                     </div>
                     <label for="house_allowance"/>
                     <div class="o_row">
-                        <field name="house_allowance" nolabel="1" attrs="{'invisible': [([company_id],'!=', 2)]}"/>
+                        <field name="house_allowance" nolabel="1"/>
                         <span>/ month</span>
                     </div>
                     <label for="attendance_award"/>
                     <div class="o_row">
 
                         <field name="attendance_award" nolabel="1"/>
+                        <span>/ month</span>
+                    </div>
+                    <label for="seniority_allowance"/>
+                    <div class="o_row">
+
+                        <field name="seniority_allowance" nolabel="1"/>
                         <span>/ month</span>
                     </div>
                     <!--label for="meal_allowance"/>
