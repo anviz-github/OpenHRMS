@@ -100,7 +100,7 @@
                     </div>
                     <label for="house_allowance"/>
                     <div class="o_row">
-                        <field name="house_allowance" nolabel="1"/>
+                        <field name="house_allowance" nolabel="1" attrs="{'invisible': [([company_id],'!=', 2)]}"/>
                         <span>/ month</span>
                     </div>
                     <label for="attendance_award"/>
