@@ -29,11 +29,12 @@
                     <field name="performance_bonus_trial" nolabel="1"/>
                     <span>/ month</span>
                 <label for="additional_wage"/>
+                </div>
                 <div class="o_row" name="additional_wage">
                     <field name="additional_wage" nolabel="1"/>
                     <span>/ month</span>
                 </div>
-                </div>
+                
                 <label for="performance_bonus"/>
                 <div class="o_row" name="performance_bonus">
                     <field name="performance_bonus" nolabel="1"/>
