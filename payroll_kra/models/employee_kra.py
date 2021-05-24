@@ -34,11 +34,11 @@ class payroll_kra(models.Model):
         this_quarterly = (this_month - 1)//3 + 1
         quarterlys.append(this_quarterly)
 
-        if ((this_quarterly - 1)//3 - 1) == 0:
+        if this_quarterly == 4:
             last_quarterly = 1
             quarterlys.append(last_quarterly)
         else:
-            last_quarterly = (this_quarterly - 1)//3 - 1
+            last_quarterly = this_quarterly - 1
             quarterlys.append(last_quarterly)
         for rec in self:
 
@@ -56,13 +56,12 @@ class payroll_kra(models.Model):
             year = year - 1
         else:
             last_month = this_month - 1
-
-        this_quarterly = (this_month - 1) // 3 + 1
-        if ((this_quarterly - 1)//3 - 1) == 0:
+        this_quarterly = (this_month - 1)//3 + 1
+        if this_quarterly == 4:
             last_quarterly = 1
-
         else:
-            last_quarterly = (this_quarterly - 1)//3 - 1
+            last_quarterly = this_quarterly - 1
+
 
 
         for emp in self:
@@ -82,14 +81,14 @@ class payroll_kra(models.Model):
                 for question in questions:
                     if kra_id.name == str(this_month) and kra_id.year.name == str(year) :
 
-                        if this_month in months and kra_id.quarterly == str(this_quarterly):
+                        if (this_month in months) and kra_id.quarterly == this_quarterly:
                             this_quarterly_records += 1
                             final_score_this_quarterly = final_score_this_quarterly + question.final_score
                         else:
                             this_month_records += 1
                             final_score_this_month = final_score_this_month + question.final_score
 
-                    elif last_month in months and kra_id.quarterly == str(last_quarterly):
+                    elif last_month in months and kra_id.quarterly == last_quarterly:
                         last_quarterly_records += 1
                         final_score_last_quarterly = final_score_last_quarterly + question.final_score
                     else:
