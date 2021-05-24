@@ -20,21 +20,20 @@ class payroll_kra(models.Model):
                           #domain=[('state', '=', 'done')])
 
     def _get_kras(self):
-        months = []
+
         quarterlys = []
         this_month = datetime.now().month
         year = datetime.now().year
-        months.append(this_month)
+
 
         if this_month == 1:
             last_month = 12
             year = year - 1
-        else:
-            last_month = this_month - 1
-        months.append(last_month)
+
 
         this_quarterly = (this_month - 1)//3 + 1
         quarterlys.append(this_quarterly)
+
         if ((this_quarterly - 1)//3 - 1) == 0:
             last_quarterly = 1
             quarterlys.append(last_quarterly)
@@ -43,7 +42,7 @@ class payroll_kra(models.Model):
             quarterlys.append(last_quarterly)
         for rec in self:
 
-            kra = self.env['employee.kra'].search([('employee_id', '=', rec.id), ('state', '=', 'done'), ('year', '=', str(year)), ('name', 'in', months)])
+            kra = self.env['employee.kra'].search([('employee_id', '=', rec.id), ('state', '=', 'done'), ('year', '=', str(year)), ('quarterly', 'in', quarterlys)])
             rec.kras = kra
 
 
