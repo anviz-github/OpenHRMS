@@ -16,6 +16,12 @@
                             <field name="kra_final_score_last_month">%</field>
 
                         </group>
+                        <group>
+                            <!--field name="insurance_percentage">%</field-->
+                            <field name="kra_final_score_this_quarterly">%</field>
+                            <field name="kra_final_score_last_quarterly">%</field>
+
+                        </group>
                     <field name="kras" context="{'default_employee_id':id}"/>
                     </group>
                 </page>
