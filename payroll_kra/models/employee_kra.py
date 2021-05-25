@@ -20,53 +20,57 @@ class payroll_kra(models.Model):
                           #domain=[('state', '=', 'done')])
 
     def _get_kras(self):
-
+        months = []
         quarterlys = []
         this_month = datetime.now().month
         year = datetime.now().year
 
-
-        if this_month == 1:
-            last_month = 12
-            year = year - 1
-
-
-        this_quarterly = (this_month - 1)//3 + 1
-        quarterlys.append(this_quarterly)
-
-        if this_quarterly == 4:
-            last_quarterly = 1
-            quarterlys.append(last_quarterly)
-        else:
-            last_quarterly = this_quarterly - 1
-            quarterlys.append(last_quarterly)
-        for rec in self:
-
-            kra = self.env['employee.kra'].search([('employee_id', '=', rec.id), ('state', '=', 'done'), ('year', '=', str(year)), ('quarterly', 'in', quarterlys)])
-            rec.kras = kra
-
-
-
-    def _kra_final_score_compute(self):
-        select_months = []
-        this_month = datetime.now().month
-        select_months.append(this_month)
-
-        year = datetime.now().year
-        months = [3, 6, 9, 12]
         if this_month == 1:
             last_month = 12
             year = year - 1
         else:
             last_month = this_month - 1
+        months.append(str(this_month))
+        months.append(str(last_month))
+
+
+        this_quarterly = (this_month - 1)//3 + 1
+        quarterlys.append(str(this_quarterly))
+
+        if this_quarterly == 4:
+            last_quarterly = 1
+            quarterlys.append(last_quarterly)
+        else:
+            last_quarterly = this_quarterly - 1
+            quarterlys.append(str(last_quarterly))
+        for rec in self:
+
+            kra = self.env['employee.kra'].search(['&',('employee_id', '=', rec.id), ('state', '=', 'done'), ('year', '=', str(year)),'|', ('quarterly', 'in', quarterlys),('name', 'in', months)])
+            rec.kras = kra
+
+
+
+    def _kra_final_score_compute(self):
+        quarters = []
+        months = []
+        this_month = datetime.now().month
+        year = datetime.now().year
+
+        if this_month == 1:
+            last_month = 12
+            year = year - 1
+        else:
+            last_month = this_month - 1
+        months.append(str(this_month))
+        months.append(str(last_month))
+
         this_quarterly = (this_month - 1)//3 + 1
         if this_quarterly == 4:
             last_quarterly = 1
         else:
             last_quarterly = this_quarterly - 1
-
-        select_months.append(last_month)
-
+        quarters.append(this_quarterly)
+        quarters.append(last_quarterly)
 
         for emp in self:
             final_score_this_month = 0
@@ -80,21 +84,29 @@ class payroll_kra(models.Model):
 
             for kra_id in emp.kras:
 
-                questions = self.env['employee.kra.question'].search([('employee_kra_id', '=', kra_id.id), ('name', 'in', select_months)])
+                if kra_id.quarterly == str(this_quarterly):
+                    questions = self.env['employee.kra.question'].search([('employee_kra_id', '=', kra_id.id)])
+                    this_quarterly_records += 1
+                    for question in questions:
+                        final_score_this_quarterly = final_score_this_quarterly + question.final_score
 
-                for question in questions:
-                    if kra_id.name == str(this_month) and kra_id.year.name == str(year):
-                        if (this_month in months) and kra_id.quarterly == this_quarterly:
-                            this_quarterly_records += 1
-                            final_score_this_quarterly = final_score_this_quarterly + question.final_score
-                        else:
-                            this_month_records += 1
-                            final_score_this_month = final_score_this_month + question.final_score
-                    elif last_month in months and kra_id.quarterly == last_quarterly:
-                        last_quarterly_records += 1
+                elif kra_id.quarterly == str(last_quarterly):
+
+                    questions = self.env['employee.kra.question'].search([('employee_kra_id', '=', kra_id.id)])
+                    last_quarterly_records += 1
+                    for question in questions:
                         final_score_last_quarterly = final_score_last_quarterly + question.final_score
-                    else:
-                        last_month_records += 1
+
+                elif kra_id.name == str(this_month):
+                    questions = self.env['employee.kra.question'].search([('employee_kra_id', '=', kra_id.id)])
+                    this_month_records += 1
+                    for question in questions:
+                        final_score_this_month = final_score_this_month + question.final_score
+
+                elif kra_id.name == str(last_month):
+                    questions = self.env['employee.kra.question'].search([('employee_kra_id', '=', kra_id.id)])
+                    last_month_records += 1
+                    for question in questions:
                         final_score_last_month = final_score_last_month + question.final_score
 
             if last_month_records == 0:
