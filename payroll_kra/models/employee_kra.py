@@ -18,7 +18,7 @@ class payroll_kra(models.Model):
     kra_final_score_last_quarterly = fields.Float(compute='_kra_final_score_compute', string='Last quarterly final score', default=100, readonly='1')
     kras = fields.One2many('employee.kra', 'employee_id', string="KRAS", help="KRAS", compute='_get_kras')
                           #domain=[('state', '=', 'done')])
-
+    @api.onchange('kras')
     def _get_kras(self):
         months = []
         quarterlys = []
