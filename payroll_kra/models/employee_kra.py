@@ -48,7 +48,9 @@ class payroll_kra(models.Model):
 
 
     def _kra_final_score_compute(self):
+        select_months = []
         this_month = datetime.now().month
+        two_months.append(this_month)
         year = datetime.now().year
         months = [3, 6, 9, 12]
         if this_month == 1:
@@ -61,7 +63,7 @@ class payroll_kra(models.Model):
             last_quarterly = 1
         else:
             last_quarterly = this_quarterly - 1
-
+        two_months.append(last_month)
 
 
         for emp in self:
@@ -76,18 +78,16 @@ class payroll_kra(models.Model):
 
             for kra_id in emp.kras:
 
-                questions = self.env['employee.kra.question'].search([('employee_kra_id', '=', kra_id.id)])
+                questions = self.env['employee.kra.question'].search([('employee_kra_id', '=', kra_id.id), ('name', 'in', two_months)])
 
                 for question in questions:
-                    if kra_id.name == str(this_month) and kra_id.year.name == str(year) :
-
+                    if kra_id.name == str(this_month) and kra_id.year.name == str(year):
                         if (this_month in months) and kra_id.quarterly == this_quarterly:
                             this_quarterly_records += 1
                             final_score_this_quarterly = final_score_this_quarterly + question.final_score
                         else:
                             this_month_records += 1
                             final_score_this_month = final_score_this_month + question.final_score
-
                     elif last_month in months and kra_id.quarterly == last_quarterly:
                         last_quarterly_records += 1
                         final_score_last_quarterly = final_score_last_quarterly + question.final_score
