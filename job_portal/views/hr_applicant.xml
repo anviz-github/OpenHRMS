@@ -8,22 +8,21 @@
             <field name="arch" type="xml">
 
                 <!--<field name="languages_known" string="Languages Known"/>-->
-                <!--field name="is_hr" invisible="True"/-->
                 <field name="partner_id" position="attributes">
                     <attribute name="string">Residential address</attribute>
                 </field>
 
                 <field name="description" position="before">
+                    <field name="is_hr" />
                     <notebook>
                         <page string="Personal Info">
                             <group>
 
                                 <group string="Citizenship &amp; Other Info">
                                     <field name="country_id" attrs="{'required':[('is_hr','=',False)]}"/>
-                                           <!--attrs="{'required':[('is_hr','=',False)]}"/-->
                                            <!--required="True"/-->
-                                    <field name="identification_id"
-                                           required="True"/>
+                                    <field name="identification_id" attrs="{'required':[('is_hr','=',False)]}"/>
+                                           <!--required="True"/-->
                                     <field name="passport_id"/>
                                     <field name="provident_fund_id"/>
                                 </group>
@@ -56,11 +55,14 @@
 
                                 </group>
                                 <group string="Status">
-                                    <field name="gender" required="True"/>
-                                    <field name="marital" required="True"/>
+                                    <field name="gender" attrs="{'required':[('is_hr','=',False)]}"/>
+                                    <!--required="True"/-->
+                                    <field name="marital" attrs="{'required':[('is_hr','=',False)]}"/>
+                                    <!--required="True"/-->
                                 </group>
                                 <group string="Birth">
-                                    <field name="birthday" required="True"/>
+                                    <field name="birthday" attrs="{'required':[('is_hr','=',False)]}"/>
+                                    <!--required="True"/-->
                                     <field name="place_of_birth"/>
                                     <field name="country_of_birth_lt" string="Country Of Birth"/>
                                 </group>

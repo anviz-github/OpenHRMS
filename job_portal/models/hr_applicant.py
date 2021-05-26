@@ -58,9 +58,11 @@ class HrApplicant(models.Model):
                                         help="Certifications")
     is_hr = fields.Boolean(compute="_check_user_group")
 
-
+    @api.depends('job_id')
     def _check_user_group(self):
-        self.is_hr = self.user.has_group('base.group_recruitment_administrator')
+        self.is_hr = self.env.user.has_group('hr_recruitment.group_hr_recruitment_manager')
+
+
 
     @api.constrains('salary_expected', 'salary_proposed', 'birthday')
     def validate_applicants(self):
